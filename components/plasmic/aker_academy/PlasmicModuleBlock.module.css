@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 768px;
+  position: relative;
+  min-width: 0;
+  padding: var(--token-J9Ozeg54D);
+}
+.freeBox__vt8RW {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: var(--token-QHlU0s-wB);
+  min-width: 0;
+  padding: var(--token-hJVIBRGBA) var(--token-RGyKlVagZ);
+  border: 1px solid var(--token-ES8gRl2WJ);
+}
+.freeBox__poyn9 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.freeBox__zWuZf {
+  display: flex;
+  position: relative;
+}
+.slotTargetChildren {
+  font-weight: 600;
+  color: var(--token-KyVRo1doe);
+}
+.unitLink___0Uz2:global(.__wab_instance) {
+  position: relative;
+}
+.unitLink__nz414:global(.__wab_instance) {
+  position: relative;
+}
+.unitLink__m28Sb:global(.__wab_instance) {
+  position: relative;
+}
+.unitLink__at5Rq:global(.__wab_instance) {
+  position: relative;
+}

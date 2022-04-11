@@ -1,0 +1,527 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
+      "projectApiToken": "DWg4EVpu2l6n6fAdMDCvE22FFoWH1NK3ZmqmXnzezysh5ZWic03cixuobavnSG7W2O29VnLlgnyQp1TAijQ",
+      "projectName": "antd",
+      "version": "2.0.1",
+      "cssFilePath": "plasmic/antd/plasmic_antd.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "kv6Mk_JNYw",
+          "name": "Button",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "iBC45mjTXv",
+          "name": "Slider",
+          "componentImportPath": "@plasmicpkgs/antd"
+        },
+        {
+          "id": "tRueht1jub",
+          "name": "Switch",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "YRr0RPAdEj",
+          "name": "Option",
+          "componentImportPath": "rc-select"
+        },
+        {
+          "id": "Ay1H491feg",
+          "name": "OptGroup",
+          "componentImportPath": "rc-select"
+        },
+        {
+          "id": "2YpGIhkzkpc",
+          "name": "Select",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "yegZ392NLoV",
+          "name": "CollapsePanel",
+          "componentImportPath": "antd/lib/collapse/CollapsePanel"
+        },
+        {
+          "id": "F10gpQ1ZhXY",
+          "name": "Collapse",
+          "componentImportPath": "antd/lib/collapse/Collapse"
+        },
+        {
+          "id": "SAEWraOT2YV",
+          "name": "Checkbox",
+          "componentImportPath": "antd/lib/checkbox/Checkbox"
+        },
+        {
+          "id": "m5zFS-kMOL-",
+          "name": "CheckboxGroup",
+          "componentImportPath": "antd/lib/checkbox/Group"
+        },
+        {
+          "id": "6DZuSUEKjFh",
+          "name": "MenuDivider",
+          "componentImportPath": "antd/lib/menu/MenuDivider"
+        },
+        {
+          "id": "HZ6EmQgIQJr",
+          "name": "MenuItem",
+          "componentImportPath": "antd/lib/menu/MenuItem"
+        },
+        {
+          "id": "LGE6ExNG8fZ",
+          "name": "ItemGroup",
+          "componentImportPath": "rc-menu"
+        },
+        {
+          "id": "DSwQm8gUYob",
+          "name": "SubMenu",
+          "componentImportPath": "antd/lib/menu/SubMenu"
+        },
+        {
+          "id": "Iz_hLKpHZDg",
+          "name": "Menu",
+          "componentImportPath": "antd/lib/menu/index"
+        },
+        {
+          "id": "_C8wcdH3BDp",
+          "name": "Carousel",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "tO9wrxr8Nbb",
+          "name": "Input",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "ZJIPHLoTjkN",
+          "name": "TextArea",
+          "componentImportPath": "antd/lib/input/TextArea"
+        },
+        {
+          "id": "zDcn8vsMldu",
+          "name": "Search",
+          "componentImportPath": "antd/lib/input/Search"
+        },
+        {
+          "id": "fTDg0FM1tnD",
+          "name": "Password",
+          "componentImportPath": "antd/lib/input/Password"
+        },
+        {
+          "id": "uZueUXuqePq",
+          "name": "InputGroup",
+          "componentImportPath": "antd/lib/input/Group"
+        },
+        {
+          "id": "cv59X4q0WK",
+          "name": "Dropdown",
+          "componentImportPath": "@plasmicpkgs/antd"
+        },
+        {
+          "id": "cHUYQj2aKK",
+          "name": "DropdownButton",
+          "componentImportPath": "antd/lib/dropdown/dropdown-button"
+        },
+        {
+          "id": "p3HNI5RglT",
+          "name": "TabPane",
+          "componentImportPath": "rc-tabs"
+        },
+        {
+          "id": "Hb-DVgvuk3",
+          "name": "Tabs",
+          "componentImportPath": "@plasmicpkgs/antd"
+        }
+      ]
+    },
+    {
+      "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
+      "projectApiToken": "3n3SKEMyDjMJptsNvaK6yxRaa8PAgqwkfIhRbKT4ZG9SobeM3Kb5rE2pSYmbR338Z5p6vBTScOAnptZwGSbQ",
+      "projectName": "react-youtube",
+      "version": "3.0.2",
+      "cssFilePath": "plasmic/react_youtube/plasmic_react_youtube.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CHO21V9uYw",
+          "name": "YouTube",
+          "componentImportPath": "@plasmicpkgs/react-youtube"
+        }
+      ]
+    },
+    {
+      "projectId": "sog8262LcebSfK4tonEqFh",
+      "projectApiToken": "URYPZ9bBBEQEfsGcKSGQzVzoMfsa5j9O31qO6wxLUjQFWOiTYl1G7eeM6P8vsjHN8iswjaADEFAThSgfUvPPsA",
+      "projectName": "Aker Academy",
+      "version": "latest",
+      "cssFilePath": "plasmic/aker_academy/plasmic_aker_academy.module.css",
+      "components": [
+        {
+          "id": "SLoEy8U2Bb",
+          "name": "DevOpsAcademy",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicDevOpsAcademy.tsx",
+          "importSpec": {
+            "modulePath": "../pages/dev-ops-masterclass.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicDevOpsAcademy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "Nxyr3sFmDS",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicHeader.tsx",
+          "importSpec": {
+            "modulePath": "Header.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "XPfe-LECZQ",
+          "name": "PageHeading",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicPageHeading.tsx",
+          "importSpec": {
+            "modulePath": "PageHeading.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicPageHeading.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "SpJlpkBmbsK",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "2KszG0-KPy",
+          "name": "ButtonOutlined",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicButtonOutlined.tsx",
+          "importSpec": {
+            "modulePath": "ButtonOutlined.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicButtonOutlined.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "F9ColP2Mm0",
+          "name": "EnrolBlock",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicEnrolBlock.tsx",
+          "importSpec": {
+            "modulePath": "EnrolBlock.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicEnrolBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "RpE2xjMN4w",
+          "name": "ActivityLinkBlock",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicActivityLinkBlock.tsx",
+          "importSpec": {
+            "modulePath": "ActivityLinkBlock.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicActivityLinkBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8vP09OMQMX",
+          "name": "Step2LinuxAdministrationLessons12",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicStep2LinuxAdministrationLessons12.tsx",
+          "importSpec": {
+            "modulePath": "../pages/step-2-linux-administration-lessons-1-2.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicStep2LinuxAdministrationLessons12.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "Bq5HbP3pCG",
+          "name": "UnitLink",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicUnitLink.tsx",
+          "importSpec": {
+            "modulePath": "UnitLink.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicUnitLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "OGBnjhx9vmv",
+          "name": "ModuleBlock",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicModuleBlock.tsx",
+          "importSpec": {
+            "modulePath": "ModuleBlock.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicModuleBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wjbmsNY1FAt",
+          "name": "ActivitySubNavigation",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicActivitySubNavigation.tsx",
+          "importSpec": {
+            "modulePath": "ActivitySubNavigation.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicActivitySubNavigation.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6Y659n9eOk8",
+          "name": "Step3Project1LampStackImplementation",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicStep3Project1LampStackImplementation.tsx",
+          "importSpec": {
+            "modulePath": "../pages/step-2-linux-administration-lessons-1-3.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicStep3Project1LampStackImplementation.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "NjYXABaFa1bn",
+          "name": "Icon29Icon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icon29.tsx"
+        },
+        {
+          "id": "U0-sNqDi-QKZ",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "sEF2z7Rc9kNs",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "dQluRjP3M4ze",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "g1ioEUoyUBu",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "UiMMPgDsW7t",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icon4.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "GdPnjq64YwQ0",
+          "name": "image",
+          "filePath": "../public/plasmic/aker_academy/images/image.svg"
+        },
+        {
+          "id": "1RZ8SFXXyjYW",
+          "name": "image 2",
+          "filePath": "../public/plasmic/aker_academy/images/image2.jpeg"
+        },
+        {
+          "id": "zQPB1GOEh",
+          "name": "aker-logo-reverse.png",
+          "filePath": "../public/plasmic/aker_academy/images/akerLogoReversepng.png"
+        },
+        {
+          "id": "wA2sTLnNN",
+          "name": "banner-3.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/banner3Jpg.jpeg"
+        },
+        {
+          "id": "TGXbDWDyS",
+          "name": "aker-academy-logo-reverse-400x68px.png",
+          "filePath": "../public/plasmic/aker_academy/images/akerAcademyLogoReverse400X68Pxpng.png"
+        },
+        {
+          "id": "mOftE8ylC",
+          "name": "aker-academy-logo-reverse-400x66px.png",
+          "filePath": "../public/plasmic/aker_academy/images/akerAcademyLogoReverse400X66Pxpng.png"
+        },
+        {
+          "id": "i0RG1O7rz",
+          "name": "devOps-banner.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/devOpsBannerjpg.jpeg"
+        },
+        {
+          "id": "ehks7yLC6",
+          "name": "onboarding-thumb.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/onboardingThumbjpg.jpeg"
+        },
+        {
+          "id": "rbuKawWeI",
+          "name": "linux-1.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/linux1Jpg.jpeg"
+        },
+        {
+          "id": "82316Dsm2",
+          "name": "lamp-stack.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/lampStackjpg.jpeg"
+        },
+        {
+          "id": "gjCLURD-Q",
+          "name": "lamp-stack.jpg 2",
+          "filePath": "../public/plasmic/aker_academy/images/lampStackjpg2.jpeg"
+        },
+        {
+          "id": "XIp3qUBt-",
+          "name": "lamp-stack.jpg 3",
+          "filePath": "../public/plasmic/aker_academy/images/lampStackjpg3.jpeg"
+        },
+        {
+          "id": "8aDxXR-Wr",
+          "name": "lemp-stack.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/lempStackjpg.jpeg"
+        },
+        {
+          "id": "bkMeyNaMM",
+          "name": "mern-stack.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/mernStackjpg.jpeg"
+        },
+        {
+          "id": "TtPcHJK_h",
+          "name": "linux-2.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/linux2Jpg.jpeg"
+        },
+        {
+          "id": "WUKUochBo",
+          "name": "aker-academy-logo-400x65px.png",
+          "filePath": "../public/plasmic/aker_academy/images/akerAcademyLogo400X65Pxpng.png"
+        },
+        {
+          "id": "EKa5DIYqw",
+          "name": "linux-1-banner.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/linux1Bannerjpg.jpeg"
+        },
+        {
+          "id": "jrhrO2K-L",
+          "name": "linux-1-banner.jpg 2",
+          "filePath": "../public/plasmic/aker_academy/images/linux1Bannerjpg2.jpeg"
+        },
+        {
+          "id": "9sefRicQV",
+          "name": "icons8-padlock-48.png",
+          "filePath": "../public/plasmic/aker_academy/images/icons8Padlock48Png.png"
+        },
+        {
+          "id": "I2GzKvFRt",
+          "name": "icons8-time-48.png",
+          "filePath": "../public/plasmic/aker_academy/images/icons8Time48Png.png"
+        },
+        {
+          "id": "p4E9eRCB3",
+          "name": "icons8-sort-right-48.png",
+          "filePath": "../public/plasmic/aker_academy/images/icons8SortRight48Png.png"
+        },
+        {
+          "id": "DnOOFTVYz",
+          "name": "lamp-stack-thumb.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/lampStackThumbjpg.jpeg"
+        },
+        {
+          "id": "WlFv6vja4",
+          "name": "lemp-stack-thumb.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/lempStackThumbjpg.jpeg"
+        },
+        {
+          "id": "yxKPle4Rm",
+          "name": "mern-stack-thumb.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/mernStackThumbjpg.jpeg"
+        },
+        {
+          "id": "ZWey5JxZN",
+          "name": "lamp-stack-banner.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/lampStackBannerjpg.jpeg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "WYcoTSnfjowKK",
+        "name": "Screen",
+        "projectId": "sog8262LcebSfK4tonEqFh",
+        "contextFilePath": "plasmic/aker_academy/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.176",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.176/dist/plasmic.schema.json"
+}

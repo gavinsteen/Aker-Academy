@@ -1,0 +1,25 @@
+.root {
+  position: relative;
+  height: var(--token-io_BLKK7g);
+  transition-property: all;
+  transition-duration: 0.4s;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1px;
+  padding: 15px var(--token-hJVIBRGBA);
+  border: 1px solid var(--token-W-7uFIfv4);
+}
+.root:hover {
+  background: #0f47a129;
+  transform: none;
+  cursor: pointer;
+  justify-content: center;
+}
+.slotTargetChildren {
+  color: var(--token-W-7uFIfv4);
+  text-align: center;
+}
+.root:hover .slotTargetChildren {
+  text-align: center;
+}

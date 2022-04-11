@@ -1,0 +1,43 @@
+.root {
+  height: auto;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media (max-width: 1024px) {
+  .root {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.h1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  left: auto;
+  top: auto;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetChildren {
+  color: var(--token-kDk2RkWQ2);
+}
+.freeBox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot {
+  font-size: 19px;
+  color: var(--token-HzYxHSeBA);
+  line-height: var(--token-Ac-TrGi9i);
+}

@@ -1,0 +1,137 @@
+.root {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration-line: none;
+  color: var(--token-6cUzEnudh);
+  transition-property: all;
+  transition-duration: 0.4s;
+  opacity: 1;
+  cursor: pointer;
+  min-width: 0;
+}
+.rootenrolled {
+  width: 100%;
+  text-decoration-line: none;
+  color: var(--token-W-7uFIfv4);
+  min-width: 0;
+}
+.root:hover {
+  opacity: 0.64;
+}
+.freeBox__okCUo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-top-style: none;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  min-width: 0;
+  padding: var(--token-hJVIBRGBA) var(--token-RGyKlVagZ);
+  border-width: 1px;
+  border-color: var(--token-ES8gRl2WJ);
+}
+.freeBox__cQy7J {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: var(--token-J9Ozeg54D);
+}
+.img__fwUbn {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  margin-right: var(--token-cZ6pHu36F);
+  flex-shrink: 0;
+}
+.img__fwUbn > picture > img {
+  object-fit: cover;
+}
+.img__fwUbn > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.imgenrolled__fwUbnXhXFc {
+  display: none !important;
+}
+.img__esCxb {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  display: none !important;
+}
+.img__esCxb > picture > img {
+  object-fit: cover;
+}
+.img__esCxb > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.imgenrolled__esCxbXhXFc {
+  display: inline-block !important;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.textenrolled {
+  text-decoration-line: none;
+}
+.freeBox___9UhaP {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 15%;
+  min-width: 0;
+  padding: var(--token-J9Ozeg54D);
+}
+.img__vJaDc {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.img__vJaDc > picture > img {
+  object-fit: cover;
+}
+.img__vJaDc > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.freeBox__n9P6N {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetChildrenenrolled {
+  color: var(--token-4DSeXtXjh);
+}

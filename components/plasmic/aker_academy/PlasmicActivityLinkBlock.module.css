@@ -1,0 +1,101 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 308px;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--token-Icm3kDGeS);
+  transition-property: all;
+  transition-duration: 0.4s;
+  position: relative;
+  min-width: 0;
+  padding: var(--token-J9Ozeg54D);
+}
+.root:hover {
+  background: var(--token-9ZpCyn57O);
+  cursor: pointer;
+}
+.freeBox__fuOih {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: var(--token-J9Ozeg54D);
+}
+.root:hover .freeBox__fuOih {
+  cursor: pointer;
+}
+.img__u6Bqh {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__u6Bqh > picture > img {
+  object-fit: cover;
+}
+.img__u6Bqh > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.freeBox__rubMb {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90px;
+  height: auto;
+  max-width: 100%;
+  left: auto;
+  top: auto;
+  background: var(--token-_5BonOMRK);
+  bottom: 0;
+  right: 0;
+  padding: var(--token-hJVIBRGBA);
+}
+.freeBoxproject__rubMb6OZV {
+  background: var(--token-xs6NlDjzN);
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-kDk2RkWQ2);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  min-width: 0;
+}
+.freeBox__rAJl5 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: var(--token-RGyKlVagZ);
+}
+.freeBox__mb7Kt {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--token-KyVRo1doe);
+}
