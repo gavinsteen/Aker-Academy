@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -158,7 +158,8 @@
           "name": "Tabs",
           "componentImportPath": "@plasmicpkgs/antd"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -177,7 +178,8 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "sog8262LcebSfK4tonEqFh",
@@ -193,7 +195,7 @@
           "projectId": "sog8262LcebSfK4tonEqFh",
           "renderModuleFilePath": "plasmic/aker_academy/PlasmicDevOpsAcademy.tsx",
           "importSpec": {
-            "modulePath": "../pages/dev-ops-masterclass.tsx"
+            "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/aker_academy/PlasmicDevOpsAcademy.module.css",
           "scheme": "blackbox",

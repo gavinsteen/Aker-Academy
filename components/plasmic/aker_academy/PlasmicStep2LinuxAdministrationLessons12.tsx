@@ -83,6 +83,7 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   return (
     <React.Fragment>
