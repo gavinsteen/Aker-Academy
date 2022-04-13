@@ -39,6 +39,7 @@ import PageHeading from "../../PageHeading"; // plasmic-import: XPfe-LECZQ/compo
 import ActivitySubNavigation from "../../ActivitySubNavigation"; // plasmic-import: wjbmsNY1FAt/component
 import EnrolBlock from "../../EnrolBlock"; // plasmic-import: F9ColP2Mm0/component
 import ModuleBlock from "../../ModuleBlock"; // plasmic-import: OGBnjhx9vmv/component
+import UnitLink from "../../UnitLink"; // plasmic-import: Bq5HbP3pCG/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -71,6 +72,7 @@ export type PlasmicStep2LinuxAdministrationLessons12__OverridesType = {
   activitySubNavigation?: p.Flex<typeof ActivitySubNavigation>;
   sectionBody?: p.Flex<"div">;
   enrolBlock?: p.Flex<typeof EnrolBlock>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultStep2LinuxAdministrationLessons12Props {}
@@ -197,27 +199,6 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
               <ModuleBlock
                 className={classNames(
                   "__wab_instance",
-                  sty.moduleBlock__wLo4H,
-                  {
-                    [sty.moduleBlockenrolled__wLo4Hopxts]: hasVariant(
-                      variants,
-                      "enrolled",
-                      "enrolled"
-                    )
-                  }
-                )}
-                enrolled={
-                  hasVariant(variants, "enrolled", "enrolled")
-                    ? true
-                    : undefined
-                }
-              >
-                {"Module 1: Set up your environment"}
-              </ModuleBlock>
-
-              <ModuleBlock
-                className={classNames(
-                  "__wab_instance",
                   sty.moduleBlock__wgQ9T,
                   {
                     [sty.moduleBlockenrolled__wgQ9Topxts]: hasVariant(
@@ -232,8 +213,157 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
                     ? true
                     : undefined
                 }
+                slot={
+                  <React.Fragment>
+                    <p.PlasmicLink
+                      data-plasmic-name={"link"}
+                      data-plasmic-override={overrides.link}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link
+                      )}
+                      component={Link}
+                      href={"/step-2-linux-administration-lessons-1-4" as const}
+                      platform={"nextjs"}
+                    >
+                      <UnitLink
+                        className={classNames(
+                          "__wab_instance",
+                          sty.unitLink___8H45T
+                        )}
+                      >
+                        {"8:26 min"}
+                      </UnitLink>
+                    </p.PlasmicLink>
+
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__iLvYd
+                      )}
+                      slot={"History of Linux"}
+                    >
+                      {"8:00 min"}
+                    </UnitLink>
+
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__bKVs
+                      )}
+                      slot={"Using EC2 as your virtual server"}
+                    >
+                      {"11:58 min"}
+                    </UnitLink>
+
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__xHgXm
+                      )}
+                      slot={"Connecting to EC2 virtual machine in AWS"}
+                    >
+                      {"12:00 min"}
+                    </UnitLink>
+                  </React.Fragment>
+                }
               >
                 {"Module 1: Set up your environment"}
+              </ModuleBlock>
+
+              <ModuleBlock
+                className={classNames(
+                  "__wab_instance",
+                  sty.moduleBlock__wLo4H,
+                  {
+                    [sty.moduleBlockenrolled__wLo4Hopxts]: hasVariant(
+                      variants,
+                      "enrolled",
+                      "enrolled"
+                    )
+                  }
+                )}
+                enrolled={
+                  hasVariant(variants, "enrolled", "enrolled")
+                    ? true
+                    : undefined
+                }
+                slot={
+                  <React.Fragment>
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__suhof
+                      )}
+                      slot={"Familiarising yourself with Linux terminal"}
+                    >
+                      {"8:26 min"}
+                    </UnitLink>
+
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__a4VdS
+                      )}
+                      slot={"Linux Commands | which | info | man | cd | mkdir"}
+                    >
+                      {"8:26 min"}
+                    </UnitLink>
+
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__jFiCl
+                      )}
+                      slot={"Linux Command (rmdir | rm | & flags)"}
+                    >
+                      {"8:26 min"}
+                    </UnitLink>
+
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__hmRfh
+                      )}
+                      slot={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___9ZxMk
+                          )}
+                        >
+                          {"Linux Commands cp | mv"}
+                        </div>
+                      }
+                    >
+                      {"8:26 min"}
+                    </UnitLink>
+
+                    <UnitLink
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unitLink__rotXr
+                      )}
+                      slot={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__s35Qy
+                          )}
+                        >
+                          {"Linux Commands (echo | variable ($ sign) )"}
+                        </div>
+                      }
+                    >
+                      {"8:26 min"}
+                    </UnitLink>
+                  </React.Fragment>
+                }
+              >
+                {"Module 2: Basic Linux commands"}
               </ModuleBlock>
             </div>
           </div>
@@ -251,14 +381,16 @@ const PlasmicDescendants = {
     "pageHeading",
     "activitySubNavigation",
     "sectionBody",
-    "enrolBlock"
+    "enrolBlock",
+    "link"
   ],
   sectionHero: ["sectionHero", "header", "pageHeading"],
   header: ["header"],
   pageHeading: ["pageHeading"],
   activitySubNavigation: ["activitySubNavigation"],
-  sectionBody: ["sectionBody", "enrolBlock"],
-  enrolBlock: ["enrolBlock"]
+  sectionBody: ["sectionBody", "enrolBlock", "link"],
+  enrolBlock: ["enrolBlock"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -271,6 +403,7 @@ type NodeDefaultElementType = {
   activitySubNavigation: typeof ActivitySubNavigation;
   sectionBody: "div";
   enrolBlock: typeof EnrolBlock;
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -343,6 +476,7 @@ export const PlasmicStep2LinuxAdministrationLessons12 = Object.assign(
     activitySubNavigation: makeNodeComponent("activitySubNavigation"),
     sectionBody: makeNodeComponent("sectionBody"),
     enrolBlock: makeNodeComponent("enrolBlock"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicStep2LinuxAdministrationLessons12
     internalVariantProps:

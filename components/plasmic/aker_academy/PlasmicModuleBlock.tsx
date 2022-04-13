@@ -56,10 +56,14 @@ export const PlasmicModuleBlock__VariantProps = new Array<VariantPropType>(
 
 export type PlasmicModuleBlock__ArgsType = {
   children?: React.ReactNode;
+  slot?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicModuleBlock__ArgsType;
-export const PlasmicModuleBlock__ArgProps = new Array<ArgPropType>("children");
+export const PlasmicModuleBlock__ArgProps = new Array<ArgPropType>(
+  "children",
+  "slot"
+);
 
 export type PlasmicModuleBlock__OverridesType = {
   root?: p.Flex<"div">;
@@ -67,6 +71,7 @@ export type PlasmicModuleBlock__OverridesType = {
 
 export interface DefaultModuleBlockProps {
   children?: React.ReactNode;
+  slot?: React.ReactNode;
   enrolled?: SingleBooleanChoiceArg<"enrolled">;
   className?: string;
 }
@@ -100,7 +105,7 @@ function PlasmicModuleBlock__RenderFunc(props: {
         <div className={classNames(projectcss.all, sty.freeBox__poyn9)}>
           <div className={classNames(projectcss.all, sty.freeBox__zWuZf)}>
             {p.renderPlasmicSlot({
-              defaultContents: "Module 1: Set up your environment",
+              defaultContents: "Module title",
               value: args.children,
               className: classNames(sty.slotTargetChildren)
             })}
@@ -108,63 +113,18 @@ function PlasmicModuleBlock__RenderFunc(props: {
         </div>
       </div>
 
-      <UnitLink
-        className={classNames("__wab_instance", sty.unitLink___0Uz2, {
-          [sty.unitLinkenrolled___0Uz20M9SR]: hasVariant(
-            variants,
-            "enrolled",
-            "enrolled"
-          )
-        })}
-        enrolled={
-          hasVariant(variants, "enrolled", "enrolled") ? true : undefined
-        }
-      >
-        {"8:26 min"}
-      </UnitLink>
+      {p.renderPlasmicSlot({
+        defaultContents: (
+          <UnitLink
+            className={classNames("__wab_instance", sty.unitLink__jALpR)}
+            slot={"Unit title lorem ipsum"}
+          >
+            {"8:26 min"}
+          </UnitLink>
+        ),
 
-      <UnitLink
-        className={classNames("__wab_instance", sty.unitLink__nz414, {
-          [sty.unitLinkenrolled__nz4140M9SR]: hasVariant(
-            variants,
-            "enrolled",
-            "enrolled"
-          )
-        })}
-        enrolled={
-          hasVariant(variants, "enrolled", "enrolled") ? true : undefined
-        }
-      />
-
-      <UnitLink
-        className={classNames("__wab_instance", sty.unitLink__m28Sb, {
-          [sty.unitLinkenrolled__m28Sb0M9SR]: hasVariant(
-            variants,
-            "enrolled",
-            "enrolled"
-          )
-        })}
-        enrolled={
-          hasVariant(variants, "enrolled", "enrolled") ? true : undefined
-        }
-      >
-        {"11:58 min"}
-      </UnitLink>
-
-      <UnitLink
-        className={classNames("__wab_instance", sty.unitLink__at5Rq, {
-          [sty.unitLinkenrolled__at5Rq0M9SR]: hasVariant(
-            variants,
-            "enrolled",
-            "enrolled"
-          )
-        })}
-        enrolled={
-          hasVariant(variants, "enrolled", "enrolled") ? true : undefined
-        }
-      >
-        {"12:00 min"}
-      </UnitLink>
+        value: args.slot
+      })}
     </div>
   ) as React.ReactElement | null;
 }

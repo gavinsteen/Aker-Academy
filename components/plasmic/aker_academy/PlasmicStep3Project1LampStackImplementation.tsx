@@ -39,6 +39,7 @@ import PageHeading from "../../PageHeading"; // plasmic-import: XPfe-LECZQ/compo
 import ActivitySubNavigation from "../../ActivitySubNavigation"; // plasmic-import: wjbmsNY1FAt/component
 import EnrolBlock from "../../EnrolBlock"; // plasmic-import: F9ColP2Mm0/component
 import ModuleBlock from "../../ModuleBlock"; // plasmic-import: OGBnjhx9vmv/component
+import UnitLink from "../../UnitLink"; // plasmic-import: Bq5HbP3pCG/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 

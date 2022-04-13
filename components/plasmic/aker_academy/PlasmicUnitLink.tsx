@@ -55,18 +55,22 @@ export const PlasmicUnitLink__VariantProps = new Array<VariantPropType>(
 
 export type PlasmicUnitLink__ArgsType = {
   children?: React.ReactNode;
+  slot?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicUnitLink__ArgsType;
-export const PlasmicUnitLink__ArgProps = new Array<ArgPropType>("children");
+export const PlasmicUnitLink__ArgProps = new Array<ArgPropType>(
+  "children",
+  "slot"
+);
 
 export type PlasmicUnitLink__OverridesType = {
   root?: p.Flex<"a"> & Partial<LinkProps>;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultUnitLinkProps {
   children?: React.ReactNode;
+  slot?: React.ReactNode;
   enrolled?: SingleBooleanChoiceArg<"enrolled">;
   className?: string;
 }
@@ -170,18 +174,25 @@ function PlasmicUnitLink__RenderFunc(props: {
           ) : null}
 
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text,
-              {
-                [sty.textenrolled]: hasVariant(variants, "enrolled", "enrolled")
-              }
-            )}
+            className={classNames(projectcss.all, sty.freeBox__dUzBy, {
+              [sty.freeBoxenrolled__dUzByXhXFc]: hasVariant(
+                variants,
+                "enrolled",
+                "enrolled"
+              )
+            })}
           >
-            {"Connecting to EC2 Virtual Machine in AWS"}
+            {p.renderPlasmicSlot({
+              defaultContents: "What is Linux",
+              value: args.slot,
+              className: classNames(sty.slotTargetSlot, {
+                [sty.slotTargetSlotenrolled]: hasVariant(
+                  variants,
+                  "enrolled",
+                  "enrolled"
+                )
+              })
+            })}
           </div>
         </div>
 
@@ -232,15 +243,13 @@ function PlasmicUnitLink__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "a";
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -300,7 +309,6 @@ export const PlasmicUnitLink = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicUnitLink
     internalVariantProps: PlasmicUnitLink__VariantProps,

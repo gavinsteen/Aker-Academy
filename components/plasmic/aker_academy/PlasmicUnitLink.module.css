@@ -87,14 +87,30 @@
 .imgenrolled__esCxbXhXFc {
   display: inline-block !important;
 }
-.text {
+.freeBox__dUzBy {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: row;
   min-width: 0;
 }
-.textenrolled {
+.slotTargetSlotenrolled > .__wab_text,
+.slotTargetSlotenrolled > .__wab_slot-string-wrapper,
+.slotTargetSlotenrolled > .__wab_slot > .__wab_text,
+.slotTargetSlotenrolled > .__wab_slot > .__wab_slot-string-wrapper,
+.slotTargetSlotenrolled > .__wab_slot > .__wab_slot > .__wab_text,
+.slotTargetSlotenrolled
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper,
+.slotTargetSlotenrolled > .__wab_slot > .__wab_slot > .__wab_slot > .__wab_text,
+.slotTargetSlotenrolled
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper {
   text-decoration-line: none;
 }
 .freeBox___9UhaP {

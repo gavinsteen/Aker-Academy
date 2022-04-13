@@ -19,7 +19,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: url("/plasmic/aker_academy/images/lampStackBannerjpg.jpeg") top 50% left 50% / cover repeat;
+  background: none;
   min-width: 0;
   padding: var(--token-J9Ozeg54D);
 }
@@ -29,7 +29,7 @@
   width: 100%;
   min-width: 0;
 }
-.freeBox__uJPv9 {
+.freeBox__qf57N {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -41,7 +41,7 @@
   min-width: 0;
   padding: var(--token-J9Ozeg54D);
 }
-.freeBox__mI9RA {
+.freeBox__u8V2Z {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -53,36 +53,13 @@
   margin-top: 56px;
   padding: var(--token-RGyKlVagZ);
 }
-.pageHeading:global(.__wab_instance) {
-  margin-bottom: 32px;
-}
-@media (max-width: 1024px) {
-  .pageHeading:global(.__wab_instance) {
-    margin-bottom: 32px;
-  }
-}
 .h1 {
-  color: var(--token-kDk2RkWQ2);
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
+  margin-bottom: 24px;
   min-width: 0;
-}
-.text__lnOT {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 0.2px;
-  display: none;
-}
-.activitySubNavigation:global(.__wab_instance) {
-  position: relative;
-  align-self: auto;
-  flex-shrink: 0;
-}
-@media (max-width: 1024px) {
-  .activitySubNavigation:global(.__wab_instance) {
-    flex-shrink: 0;
-  }
 }
 .sectionBody {
   display: flex;
@@ -96,7 +73,7 @@
   min-width: 0;
   padding: var(--token-J9Ozeg54D);
 }
-.freeBox__tEaAz {
+.freeBox__xJcHc {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -105,35 +82,25 @@
   width: var(--token-oT5QnAFXU);
   height: auto;
   max-width: 100%;
-  padding: var(--token-3XtcfPSMA) var(--token-RGyKlVagZ) var(--token-RGyKlVagZ);
+  left: auto;
+  top: auto;
+  padding: 0px var(--token-RGyKlVagZ) var(--token-RGyKlVagZ);
 }
 @media (max-width: 1024px) {
-  .freeBox__tEaAz {
-    padding: var(--token-hJVIBRGBA);
+  .freeBox__xJcHc {
+    padding: 0px var(--token-hJVIBRGBA) var(--token-hJVIBRGBA);
   }
 }
-.enrolBlock:global(.__wab_instance) {
+.unitVideoPlayer {
+  display: flex;
   position: relative;
-  margin-bottom: 32px;
-}
-.text__dnZk {
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: auto;
-  max-width: 800px;
-  margin-bottom: var(--token-3XtcfPSMA);
+  max-width: 100%;
+  background: var(--token-6gaRZdLgI);
   min-width: 0;
-}
-.moduleBlock__pp2Kf:global(.__wab_instance) {
-  position: relative;
-  margin-bottom: var(--token-RGyKlVagZ);
-}
-.unitLink__eSceE:global(.__wab_instance) {
-  position: relative;
-}
-.moduleBlock__jxjlD:global(.__wab_instance) {
-  position: relative;
-}
-.unitLink__pXnQ0:global(.__wab_instance) {
-  position: relative;
+  padding: var(--token-J9Ozeg54D) var(--token-J9Ozeg54D) 56.25%;
 }

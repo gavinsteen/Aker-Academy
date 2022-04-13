@@ -126,14 +126,23 @@ function PlasmicHeader__RenderFunc(props: {
                 displayMaxWidth={"100%" as const}
                 displayMinHeight={"0" as const}
                 displayMinWidth={"0" as const}
-                displayWidth={"200px" as const}
+                displayWidth={"220px" as const}
                 loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/aker_academy/images/akerAcademyLogoReverse400X66Pxpng.png",
-                  fullWidth: 400,
-                  fullHeight: 66,
-                  aspectRatio: undefined
-                }}
+                src={
+                  hasVariant(variants, "headerSolid", "headerSolid")
+                    ? {
+                        src: "/plasmic/aker_academy/images/akerAcademyLogo400X65Pxpng.png",
+                        fullWidth: 400,
+                        fullHeight: 66,
+                        aspectRatio: undefined
+                      }
+                    : {
+                        src: "/plasmic/aker_academy/images/akerAcademyLogoReverse400X66Pxpng.png",
+                        fullWidth: 400,
+                        fullHeight: 66,
+                        aspectRatio: undefined
+                      }
+                }
               />
 
               <div

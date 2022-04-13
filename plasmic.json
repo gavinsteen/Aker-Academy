@@ -344,6 +344,19 @@
           "cssFilePath": "plasmic/aker_academy/PlasmicStep3Project1LampStackImplementation.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "weQUZvpaVUY",
+          "name": "WhatIsLinux",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicWhatIsLinux.tsx",
+          "importSpec": {
+            "modulePath": "../pages/step-2-linux-administration-lessons-1-4.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicWhatIsLinux.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
