@@ -108,6 +108,12 @@
   margin-bottom: 40px;
   min-width: 0;
 }
+.reveal:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
 .freeBox__moSt {
   display: grid;
   position: relative;
@@ -118,6 +124,8 @@
   min-height: 400px;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+  transition-property: all;
+  transition-duration: 1s;
   min-width: 0;
   padding: var(--token-J9Ozeg54D);
 }
