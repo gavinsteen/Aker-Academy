@@ -357,6 +357,33 @@
           "cssFilePath": "plasmic/aker_academy/PlasmicWhatIsLinux.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "R2bezIVKDQK",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicCheckbox.tsx",
+          "importSpec": {
+            "modulePath": "Checkbox.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
+        },
+        {
+          "id": "7EPh6ElWir",
+          "name": "BackLink",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicBackLink.tsx",
+          "importSpec": {
+            "modulePath": "BackLink.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicBackLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -389,6 +416,26 @@
           "id": "UiMMPgDsW7t",
           "name": "Icon4Icon",
           "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "ZESEyCvNNgr",
+          "name": "SquaresvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Squaresvg.tsx"
+        },
+        {
+          "id": "dHR8P_oECdO",
+          "name": "SquareCheckFilledsvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__SquareCheckFilledsvg.tsx"
+        },
+        {
+          "id": "FaeHllVbbyl",
+          "name": "SquareMinussvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__SquareMinussvg.tsx"
+        },
+        {
+          "id": "3XRP6YsMa",
+          "name": "BackArrowIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__BackArrow.tsx"
         }
       ],
       "images": [
@@ -516,6 +563,16 @@
           "id": "ZWey5JxZN",
           "name": "lamp-stack-banner.jpg",
           "filePath": "../public/plasmic/aker_academy/images/lampStackBannerjpg.jpeg"
+        },
+        {
+          "id": "HV6WkYj22z",
+          "name": "icons8-circled-play-144.svg",
+          "filePath": "../public/plasmic/aker_academy/images/icons8CircledPlay144Svg.svg"
+        },
+        {
+          "id": "C-rJkmcIxQ",
+          "name": "icons8-reply-arrow.svg",
+          "filePath": "../public/plasmic/aker_academy/images/icons8ReplyArrowsvg.svg"
         }
       ],
       "indirect": false,
@@ -539,7 +596,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

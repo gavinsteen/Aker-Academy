@@ -35,11 +35,15 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: Nxyr3sFmDS/component
+import BackLink from "../../BackLink"; // plasmic-import: 7EPh6ElWir/component
+import Checkbox from "../../Checkbox"; // plasmic-import: R2bezIVKDQK/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_aker_academy.module.css"; // plasmic-import: sog8262LcebSfK4tonEqFh/projectcss
 import sty from "./PlasmicWhatIsLinux.module.css"; // plasmic-import: weQUZvpaVUY/css
+
+import BackArrowIcon from "./icons/PlasmicIcon__BackArrow"; // plasmic-import: 3XRP6YsMa/icon
 
 export type PlasmicWhatIsLinux__VariantMembers = {};
 
@@ -55,9 +59,14 @@ export type PlasmicWhatIsLinux__OverridesType = {
   root?: p.Flex<"div">;
   sectionHero?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
+  backLink?: p.Flex<typeof BackLink>;
   h1?: p.Flex<"h1">;
   sectionBody?: p.Flex<"div">;
   unitVideoPlayer?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
+  checkbox?: p.Flex<typeof Checkbox>;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultWhatIsLinuxProps {}
@@ -111,6 +120,21 @@ function PlasmicWhatIsLinux__RenderFunc(props: {
 
             <div className={classNames(projectcss.all, sty.freeBox__qf57N)}>
               <div className={classNames(projectcss.all, sty.freeBox__u8V2Z)}>
+                <p.PlasmicLink
+                  data-plasmic-name={"link"}
+                  data-plasmic-override={overrides.link}
+                  className={classNames(projectcss.all, projectcss.a, sty.link)}
+                  component={Link}
+                  href={"/step-2-linux-administration-lessons-1-2" as const}
+                  platform={"nextjs"}
+                >
+                  <BackLink
+                    data-plasmic-name={"backLink"}
+                    data-plasmic-override={overrides.backLink}
+                    className={classNames("__wab_instance", sty.backLink)}
+                  />
+                </p.PlasmicLink>
+
                 <h1
                   data-plasmic-name={"h1"}
                   data-plasmic-override={overrides.h1}
@@ -137,7 +161,51 @@ function PlasmicWhatIsLinux__RenderFunc(props: {
                 data-plasmic-name={"unitVideoPlayer"}
                 data-plasmic-override={overrides.unitVideoPlayer}
                 className={classNames(projectcss.all, sty.unitVideoPlayer)}
-              />
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__j292)}>
+                  {true ? (
+                    <p.PlasmicImg
+                      data-plasmic-name={"img"}
+                      data-plasmic-override={overrides.img}
+                      alt={""}
+                      className={classNames(sty.img)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"96px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/aker_academy/images/icons8CircledPlay144Svg.svg",
+                        fullWidth: 150,
+                        fullHeight: 150,
+                        aspectRatio: 1
+                      }}
+                    />
+                  ) : null}
+                </div>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.freeBox__v8A8N)}>
+                <Checkbox
+                  data-plasmic-name={"checkbox"}
+                  data-plasmic-override={overrides.checkbox}
+                  className={classNames("__wab_instance", sty.checkbox)}
+                >
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    {"I have completed this unit"}
+                  </div>
+                </Checkbox>
+              </div>
             </div>
           </div>
         </div>
@@ -151,15 +219,25 @@ const PlasmicDescendants = {
     "root",
     "sectionHero",
     "header",
+    "link",
+    "backLink",
     "h1",
     "sectionBody",
-    "unitVideoPlayer"
+    "unitVideoPlayer",
+    "img",
+    "checkbox",
+    "text"
   ],
-  sectionHero: ["sectionHero", "header", "h1"],
+  sectionHero: ["sectionHero", "header", "link", "backLink", "h1"],
   header: ["header"],
+  link: ["link", "backLink"],
+  backLink: ["backLink"],
   h1: ["h1"],
-  sectionBody: ["sectionBody", "unitVideoPlayer"],
-  unitVideoPlayer: ["unitVideoPlayer"]
+  sectionBody: ["sectionBody", "unitVideoPlayer", "img", "checkbox", "text"],
+  unitVideoPlayer: ["unitVideoPlayer", "img"],
+  img: ["img"],
+  checkbox: ["checkbox", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -168,9 +246,14 @@ type NodeDefaultElementType = {
   root: "div";
   sectionHero: "div";
   header: typeof Header;
+  link: "a";
+  backLink: typeof BackLink;
   h1: "h1";
   sectionBody: "div";
   unitVideoPlayer: "div";
+  img: typeof p.PlasmicImg;
+  checkbox: typeof Checkbox;
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -232,9 +315,14 @@ export const PlasmicWhatIsLinux = Object.assign(
     // Helper components rendering sub-elements
     sectionHero: makeNodeComponent("sectionHero"),
     header: makeNodeComponent("header"),
+    link: makeNodeComponent("link"),
+    backLink: makeNodeComponent("backLink"),
     h1: makeNodeComponent("h1"),
     sectionBody: makeNodeComponent("sectionBody"),
     unitVideoPlayer: makeNodeComponent("unitVideoPlayer"),
+    img: makeNodeComponent("img"),
+    checkbox: makeNodeComponent("checkbox"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicWhatIsLinux
     internalVariantProps: PlasmicWhatIsLinux__VariantProps,

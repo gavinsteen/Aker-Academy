@@ -35,6 +35,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
+import { useScreenVariants as useScreenVariantswYcoTSnfjowKk } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WYcoTSnfjowKK/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_aker_academy.module.css"; // plasmic-import: sog8262LcebSfK4tonEqFh/projectcss
@@ -84,6 +86,10 @@ function PlasmicUnitLink__RenderFunc(props: {
 }) {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantswYcoTSnfjowKk()
+  });
 
   return (
     <p.PlasmicLink
@@ -147,7 +153,13 @@ function PlasmicUnitLink__RenderFunc(props: {
               }}
             />
           ) : null}
-          {(hasVariant(variants, "enrolled", "enrolled") ? true : true) ? (
+          {(
+            hasVariant(variants, "enrolled", "enrolled")
+              ? true
+              : hasVariant(globalVariants, "screen", "mobile")
+              ? true
+              : true
+          ) ? (
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__esCxb, {
