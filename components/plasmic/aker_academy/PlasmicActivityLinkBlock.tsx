@@ -100,82 +100,88 @@ function PlasmicActivityLinkBlock__RenderFunc(props: {
         sty.root
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__fuOih)}>
-        {p.renderPlasmicSlot({
-          defaultContents: (
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__u6Bqh)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/aker_academy/images/onboardingThumbjpg.jpeg",
-                fullWidth: 800,
-                fullHeight: 400,
-                aspectRatio: undefined
-              }}
-            />
-          ),
-
-          value: args.children
-        })}
-
-        <div
-          className={classNames(projectcss.all, sty.freeBox__rubMb, {
-            [sty.freeBoxproject__rubMb6OZV]: hasVariant(
-              variants,
-              "project",
-              "project"
-            )
-          })}
-        >
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text,
-              { [sty.textproject]: hasVariant(variants, "project", "project") }
-            )}
-          >
-            {hasVariant(variants, "project", "project") ? "Project" : "Course"}
-          </div>
-        </div>
-      </div>
-
-      <div className={classNames(projectcss.all, sty.freeBox__rAJl5)}>
-        <div className={classNames(projectcss.all, sty.freeBox__mb7Kt)}>
+      <div className={classNames(projectcss.all, sty.freeBox___3Wou)}>
+        <div className={classNames(projectcss.all, sty.freeBox__fuOih)}>
           {p.renderPlasmicSlot({
             defaultContents: (
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__iOCho
-                )}
-              >
-                <React.Fragment>
-                  <React.Fragment>{""}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#757575" }}
-                  >
-                    {"Step 1:"}
-                  </span>
-                  <React.Fragment>{" Onboarding session"}</React.Fragment>
-                </React.Fragment>
-              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__u6Bqh)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/aker_academy/images/onboardingThumbjpg.jpeg",
+                  fullWidth: 800,
+                  fullHeight: 400,
+                  aspectRatio: undefined
+                }}
+              />
             ),
 
-            value: args.slot,
-            className: classNames(sty.slotTargetSlot)
+            value: args.children
           })}
+
+          <div
+            className={classNames(projectcss.all, sty.freeBox__rubMb, {
+              [sty.freeBoxproject__rubMb6OZV]: hasVariant(
+                variants,
+                "project",
+                "project"
+              )
+            })}
+          >
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text,
+                {
+                  [sty.textproject]: hasVariant(variants, "project", "project")
+                }
+              )}
+            >
+              {hasVariant(variants, "project", "project")
+                ? "Project"
+                : "Course"}
+            </div>
+          </div>
+        </div>
+
+        <div className={classNames(projectcss.all, sty.freeBox__rAJl5)}>
+          <div className={classNames(projectcss.all, sty.freeBox__mb7Kt)}>
+            {p.renderPlasmicSlot({
+              defaultContents: (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__iOCho
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#757575" }}
+                    >
+                      {"Step 1:"}
+                    </span>
+                    <React.Fragment>{" Onboarding session"}</React.Fragment>
+                  </React.Fragment>
+                </div>
+              ),
+
+              value: args.slot,
+              className: classNames(sty.slotTargetSlot)
+            })}
+          </div>
         </div>
       </div>
     </div>

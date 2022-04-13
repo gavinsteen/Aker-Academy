@@ -1,4 +1,8 @@
 .root {
+  position: relative;
+  display: flex;
+}
+.freeBox___3Wou {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9,11 +13,10 @@
   background: var(--token-Icm3kDGeS);
   transition-property: all;
   transition-duration: 0.4s;
-  position: relative;
   min-width: 0;
   padding: var(--token-J9Ozeg54D);
 }
-.root:hover {
+.root:hover .freeBox___3Wou {
   background: var(--token-9ZpCyn57O);
   cursor: pointer;
 }

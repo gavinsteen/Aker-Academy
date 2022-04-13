@@ -159,8 +159,10 @@
   color: var(--token-kDk2RkWQ2);
   min-width: 0;
 }
-.activityLinkBlock__clKpA:global(.__wab_instance) {
+.link__wdWr7 {
   position: relative;
+  display: flex;
+  text-decoration-line: none;
 }
 .img__zP8K {
   position: relative;
@@ -197,8 +199,10 @@
   color: var(--token-kDk2RkWQ2);
   min-width: 0;
 }
-.activityLinkBlock__bUake:global(.__wab_instance) {
+.link__gPyUx {
   position: relative;
+  display: flex;
+  text-decoration-line: none;
 }
 .img___8ZcOn {
   position: relative;

@@ -220,132 +220,154 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
                   </div>
                 </ActivityLinkBlock>
 
-                <ActivityLinkBlock
+                <p.PlasmicLink
                   className={classNames(
-                    "__wab_instance",
-                    sty.activityLinkBlock__clKpA
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__wdWr7
                   )}
-                  slot={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ivil
-                      )}
-                    >
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ color: "#757575" }}
-                        >
-                          {"Step 2:"}
-                        </span>
-                        <React.Fragment>
-                          {" Linux administration (lessons 1-2)"}
-                        </React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  }
+                  component={Link}
+                  href={"/step-2-linux-administration-lessons-1-2" as const}
+                  platform={"nextjs"}
                 >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__zP8K)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/aker_academy/images/linux1Jpg.jpeg",
-                      fullWidth: 800,
-                      fullHeight: 400,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__pObG0)}
+                  <ActivityLinkBlock
+                    className={classNames(
+                      "__wab_instance",
+                      sty.activityLinkBlock__clKpA
+                    )}
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ivil
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#757575" }}
+                          >
+                            {"Step 2:"}
+                          </span>
+                          <React.Fragment>
+                            {" Linux administration (lessons 1-2)"}
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    }
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xinnD
-                      )}
-                    >
-                      {"Course"}
-                    </div>
-                  </div>
-                </ActivityLinkBlock>
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__zP8K)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/aker_academy/images/linux1Jpg.jpeg",
+                        fullWidth: 800,
+                        fullHeight: 400,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                <ActivityLinkBlock
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__pObG0)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__xinnD
+                        )}
+                      >
+                        {"Course"}
+                      </div>
+                    </div>
+                  </ActivityLinkBlock>
+                </p.PlasmicLink>
+
+                <p.PlasmicLink
                   className={classNames(
-                    "__wab_instance",
-                    sty.activityLinkBlock__bUake
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__gPyUx
                   )}
-                  project={true}
-                  slot={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__pxiRm
-                      )}
-                    >
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ color: "#757575" }}
-                        >
-                          {"Step 3:"}
-                        </span>
-                        <React.Fragment>
-                          {" Project 1 - LAMP stack implementation"}
-                        </React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  }
+                  component={Link}
+                  href={"/step-2-linux-administration-lessons-1-3" as const}
+                  platform={"nextjs"}
                 >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___8ZcOn)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/aker_academy/images/lampStackThumbjpg.jpeg",
-                      fullWidth: 800,
-                      fullHeight: 400,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__uhWzE)}
+                  <ActivityLinkBlock
+                    className={classNames(
+                      "__wab_instance",
+                      sty.activityLinkBlock__bUake
+                    )}
+                    project={true}
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__pxiRm
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#757575" }}
+                          >
+                            {"Step 3:"}
+                          </span>
+                          <React.Fragment>
+                            {" Project 1 - LAMP stack implementation"}
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    }
                   >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___8ZcOn)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/aker_academy/images/lampStackThumbjpg.jpeg",
+                        fullWidth: 800,
+                        fullHeight: 400,
+                        aspectRatio: undefined
+                      }}
+                    />
+
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__egfje
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__uhWzE)}
                     >
-                      {"Course"}
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__egfje
+                        )}
+                      >
+                        {"Course"}
+                      </div>
                     </div>
-                  </div>
-                </ActivityLinkBlock>
+                  </ActivityLinkBlock>
+                </p.PlasmicLink>
 
                 <ActivityLinkBlock
                   className={classNames(
