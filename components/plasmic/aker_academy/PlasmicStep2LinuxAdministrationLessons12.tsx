@@ -167,7 +167,14 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
               data-plasmic-override={overrides.activitySubNavigation}
               className={classNames(
                 "__wab_instance",
-                sty.activitySubNavigation
+                sty.activitySubNavigation,
+                {
+                  [sty.activitySubNavigationenrolled]: hasVariant(
+                    variants,
+                    "enrolled",
+                    "enrolled"
+                  )
+                }
               )}
             />
           ) : null}

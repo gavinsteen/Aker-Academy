@@ -71,6 +71,9 @@
   align-self: auto;
   flex-shrink: 0;
 }
+.activitySubNavigationenrolled:global(.__wab_instance) {
+  flex-shrink: 0;
+}
 .sectionBody {
   display: flex;
   position: relative;

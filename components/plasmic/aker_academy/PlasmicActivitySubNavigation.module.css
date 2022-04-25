@@ -72,17 +72,21 @@
   border-right: 1px solid var(--token-L6thuUXXN);
   border-left: 1px solid var(--token-L6thuUXXN);
 }
-.text__m7Ety {
+.freeBox__m7Ety {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetChildren {
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 0.5px;
-  font-family: "Poppins", sans-serif;
-  min-width: 0;
 }
 .link__q5MXj {
   position: relative;
@@ -103,17 +107,21 @@
   padding: 8px 16px;
   border-right: 1px solid var(--token-L6thuUXXN);
 }
-.text__deeaA {
+.freeBox__deeaA {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot {
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 0.5px;
-  font-family: "Poppins", sans-serif;
-  min-width: 0;
 }
 .link__ktHXa {
   position: relative;
@@ -131,7 +139,7 @@
   padding: 8px 16px;
   border-right: 1px solid var(--token-L6thuUXXN);
 }
-.text__wtHqu {
+.text {
   position: relative;
   width: 100%;
   height: auto;

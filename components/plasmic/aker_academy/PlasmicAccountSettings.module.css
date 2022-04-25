@@ -76,6 +76,11 @@
   max-width: 800px;
   min-width: 0;
 }
+.activitySubNavigation:global(.__wab_instance) {
+  position: relative;
+  align-self: auto;
+  flex-shrink: 0;
+}
 .sectionBody {
   display: flex;
   position: relative;
@@ -110,7 +115,6 @@
   width: 512px;
   height: auto;
   max-width: 100%;
-  padding: 8px;
 }
 .h2__z3Rpp {
   position: relative;

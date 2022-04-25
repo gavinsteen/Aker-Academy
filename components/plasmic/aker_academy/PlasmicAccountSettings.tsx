@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: Nxyr3sFmDS/component
+import ActivitySubNavigation from "../../ActivitySubNavigation"; // plasmic-import: wjbmsNY1FAt/component
 import ButtonOutlined from "../../ButtonOutlined"; // plasmic-import: 2KszG0-KPy/component
 import TextInput from "../../TextInput"; // plasmic-import: HboA_9fv9kn/component
 
@@ -65,6 +66,7 @@ export type PlasmicAccountSettings__OverridesType = {
   img?: p.Flex<typeof p.PlasmicImg>;
   freeBox?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
+  activitySubNavigation?: p.Flex<typeof ActivitySubNavigation>;
   sectionBody?: p.Flex<"div">;
   containerBody?: p.Flex<"div">;
   accountSettingsForm?: p.Flex<"div">;
@@ -182,6 +184,20 @@ function PlasmicAccountSettings__RenderFunc(props: {
               </div>
             </div>
           </div>
+
+          {true ? (
+            <ActivitySubNavigation
+              data-plasmic-name={"activitySubNavigation"}
+              data-plasmic-override={overrides.activitySubNavigation}
+              className={classNames(
+                "__wab_instance",
+                sty.activitySubNavigation
+              )}
+              slot={"Logout"}
+            >
+              {"Settings"}
+            </ActivitySubNavigation>
+          ) : null}
 
           <div
             data-plasmic-name={"sectionBody"}
@@ -413,6 +429,7 @@ const PlasmicDescendants = {
     "img",
     "freeBox",
     "h1",
+    "activitySubNavigation",
     "sectionBody",
     "containerBody",
     "accountSettingsForm",
@@ -445,6 +462,7 @@ const PlasmicDescendants = {
   img: ["img"],
   freeBox: ["freeBox", "h1"],
   h1: ["h1"],
+  activitySubNavigation: ["activitySubNavigation"],
   sectionBody: [
     "sectionBody",
     "containerBody",
@@ -534,6 +552,7 @@ type NodeDefaultElementType = {
   img: typeof p.PlasmicImg;
   freeBox: "div";
   h1: "h1";
+  activitySubNavigation: typeof ActivitySubNavigation;
   sectionBody: "div";
   containerBody: "div";
   accountSettingsForm: "div";
@@ -617,6 +636,7 @@ export const PlasmicAccountSettings = Object.assign(
     img: makeNodeComponent("img"),
     freeBox: makeNodeComponent("freeBox"),
     h1: makeNodeComponent("h1"),
+    activitySubNavigation: makeNodeComponent("activitySubNavigation"),
     sectionBody: makeNodeComponent("sectionBody"),
     containerBody: makeNodeComponent("containerBody"),
     accountSettingsForm: makeNodeComponent("accountSettingsForm"),

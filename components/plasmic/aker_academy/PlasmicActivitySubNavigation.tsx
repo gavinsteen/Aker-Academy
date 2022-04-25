@@ -62,16 +62,26 @@ export const PlasmicActivitySubNavigation__VariantProps =
     "noSubNavigation"
   );
 
-export type PlasmicActivitySubNavigation__ArgsType = {};
+export type PlasmicActivitySubNavigation__ArgsType = {
+  children?: React.ReactNode;
+  slot?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicActivitySubNavigation__ArgsType;
-export const PlasmicActivitySubNavigation__ArgProps = new Array<ArgPropType>();
+export const PlasmicActivitySubNavigation__ArgProps = new Array<ArgPropType>(
+  "children",
+  "slot"
+);
 
 export type PlasmicActivitySubNavigation__OverridesType = {
   root?: p.Flex<"div">;
   subNavBar?: p.Flex<"div">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultActivitySubNavigationProps {
+  children?: React.ReactNode;
+  slot?: React.ReactNode;
   adminUserView?: SingleBooleanChoiceArg<"adminUserView">;
   discussionsDeactivated?: SingleBooleanChoiceArg<"discussionsDeactivated">;
   noSubNavigation?: SingleBooleanChoiceArg<"noSubNavigation">;
@@ -145,14 +155,12 @@ function PlasmicActivitySubNavigation__RenderFunc(props: {
             platform={"nextjs"}
           >
             <div className={classNames(projectcss.all, sty.freeBox__ohXfo)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__m7Ety
-                )}
-              >
-                {"Details"}
+              <div className={classNames(projectcss.all, sty.freeBox__m7Ety)}>
+                {p.renderPlasmicSlot({
+                  defaultContents: "Details",
+                  value: args.children,
+                  className: classNames(sty.slotTargetChildren)
+                })}
               </div>
             </div>
           </p.PlasmicLink>
@@ -201,14 +209,12 @@ function PlasmicActivitySubNavigation__RenderFunc(props: {
                   )
                 })}
               >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__deeaA
-                  )}
-                >
-                  {"Discussions"}
+                <div className={classNames(projectcss.all, sty.freeBox__deeaA)}>
+                  {p.renderPlasmicSlot({
+                    defaultContents: "Discussions",
+                    value: args.slot,
+                    className: classNames(sty.slotTargetSlot)
+                  })}
                 </div>
               </div>
             </p.PlasmicLink>
@@ -244,10 +250,12 @@ function PlasmicActivitySubNavigation__RenderFunc(props: {
                 })}
               >
                 <div
+                  data-plasmic-name={"text"}
+                  data-plasmic-override={overrides.text}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__wtHqu
+                    sty.text
                   )}
                 >
                   {"Manage"}
@@ -262,8 +270,9 @@ function PlasmicActivitySubNavigation__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "subNavBar"],
-  subNavBar: ["subNavBar"]
+  root: ["root", "subNavBar", "text"],
+  subNavBar: ["subNavBar", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -271,6 +280,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   subNavBar: "div";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -331,6 +341,7 @@ export const PlasmicActivitySubNavigation = Object.assign(
   {
     // Helper components rendering sub-elements
     subNavBar: makeNodeComponent("subNavBar"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicActivitySubNavigation
     internalVariantProps: PlasmicActivitySubNavigation__VariantProps,
