@@ -38,6 +38,7 @@ import Header from "../../Header"; // plasmic-import: Nxyr3sFmDS/component
 import PageHeading from "../../PageHeading"; // plasmic-import: XPfe-LECZQ/component
 import ActivitySubNavigation from "../../ActivitySubNavigation"; // plasmic-import: wjbmsNY1FAt/component
 import Button from "../../Button"; // plasmic-import: SpJlpkBmbsK/component
+import ButtonOutlined from "../../ButtonOutlined"; // plasmic-import: 2KszG0-KPy/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -71,12 +72,14 @@ export type PlasmicStep3Project1LampStackImplementation__OverridesType = {
   header?: p.Flex<typeof Header>;
   pageHeading?: p.Flex<typeof PageHeading>;
   h1?: p.Flex<"h1">;
-  text?: p.Flex<"div">;
   activitySubNavigation?: p.Flex<typeof ActivitySubNavigation>;
   sectionBody?: p.Flex<"div">;
   containerProjectDetails?: p.Flex<"div">;
   buttonRow?: p.Flex<"div">;
   button?: p.Flex<typeof Button>;
+  buttonOutlined?: p.Flex<typeof ButtonOutlined>;
+  ul?: p.Flex<"ul">;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultStep3Project1LampStackImplementationProps {}
@@ -126,6 +129,7 @@ function PlasmicStep3Project1LampStackImplementation__RenderFunc(props: {
               data-plasmic-name={"header"}
               data-plasmic-override={overrides.header}
               className={classNames("__wab_instance", sty.header)}
+              state={"signedIn" as const}
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__uJPv9)}>
@@ -137,12 +141,10 @@ function PlasmicStep3Project1LampStackImplementation__RenderFunc(props: {
                   slot={
                     true ? (
                       <div
-                        data-plasmic-name={"text"}
-                        data-plasmic-override={overrides.text}
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text
+                          sty.text__lnOT
                         )}
                       >
                         {"Lessons 1 -2"}
@@ -203,7 +205,612 @@ function PlasmicStep3Project1LampStackImplementation__RenderFunc(props: {
                 >
                   {"Mark as complete"}
                 </Button>
+
+                <ButtonOutlined
+                  data-plasmic-name={"buttonOutlined"}
+                  data-plasmic-override={overrides.buttonOutlined}
+                  className={classNames("__wab_instance", sty.buttonOutlined)}
+                >
+                  {"Submit assignment for review"}
+                </ButtonOutlined>
               </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__lj0Ta
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 600, color: "#000000" }}
+                  >
+                    {"Welcome to your very first PBL Project."}
+                  </span>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__p0Fe1
+                )}
+              >
+                {
+                  "You must be really excited to start getting your hands dirty. There are a lot of projects ahead, so without any delay, let's get started. "
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__qIBld
+                )}
+              >
+                {
+                  "As you kick off your career in DevOps, you will soon realise that everything you will be doing as a DevOps engineer is around software, websites, applications etc. And, there are different stacks of technologies that make different solutions possible. These stack of technologies are regarded as WEB STACKS. Examples of Web Stacks include LAMP, LEMP, MEAN, and MERN stacks. As you proceed in your journey, you will be required to understand and implement all of these technology stacks. Lets have a short close up on what a Technology stack is."
+                }
+              </div>
+
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__bnlck
+                )}
+              >
+                {"What is a technology stack?"}
+              </h2>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ilCow
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>
+                    {
+                      "A technology stack is a set of frameworks and tools used to develop a software product. This set of frameworks and tools are very specifically chosen to work together in creating a well-functioning software. They are acronymns for individual technologies used together for a specific technology product. some examples are…\n\n"
+                    }
+                  </React.Fragment>
+                  <ul
+                    data-plasmic-name={"ul"}
+                    data-plasmic-override={overrides.ul}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.ul,
+                      sty.ul
+                    )}
+                  >
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__hSh47
+                      )}
+                    >
+                      {"LAMP (Linux, Apache, MySQL, PHP or Python, or Perl)"}
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li___8Oyqn
+                      )}
+                    >
+                      {"LEMP (Linux, Nginx, MySQL, PHP or Python, or Perl)"}
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__cYrCn
+                      )}
+                    >
+                      {"MERN (MongoDB, ExpressJS, ReactJS, NodeJS)"}
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__uGfMb
+                      )}
+                    >
+                      {"MEAN (MongoDB, ExpressJS, AngularJS, NodeJS)"}
+                    </li>
+                  </ul>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__sbnhX
+                )}
+              >
+                {
+                  "WARNING: Most of the things you will be doing at the early days may not mean a lot to you. Sometimes it may seem like you are just copying and pasting. That is absolutely fine. We want some concepts to begin to register in your sub-conscious mind, and without you realising it, you are building up skills. although, there are certain traps that will require you to troubleshoot along the way. So watch out for them in all your project implementations."
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__iEjEl
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>
+                    {
+                      "After successful completion of PBL projects 1 to 4, you will be able to achieve the following.\n\n"
+                    }
+                  </React.Fragment>
+                  <ol
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.ol,
+                      sty.ol__dsY5
+                    )}
+                  >
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__sn2Ai
+                      )}
+                    >
+                      {"Become very confident on the Linux Terminal."}
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__lhix2
+                      )}
+                    >
+                      {
+                        "Deepen your understanding of Web Stacks and familiarity between the differences between the different Web Technology stacks such as LAMP, LEMP, MEAN, and MERN stacks."
+                      }
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__t3KoI
+                      )}
+                    >
+                      {
+                        "Solid Linux administration skills in Storage management, NFS, troubleshooting, and basic networking."
+                      }
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__sjeRg
+                      )}
+                    >
+                      {
+                        "Basic knowledge of AWS platform and components used to host a Website of various Web stacks.\n"
+                      }
+                    </li>
+                  </ol>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__cg89Y
+                )}
+              >
+                {
+                  "Being able to work with Linux requires the ability to work outside the level of your present knowledge. It means that in the real world, you will be faced with tasks that you have never worked on before, and with Google search and its results, you can achieve a lot. Thanks to “Google!!!”. It is one of the essential skills you will need to develop – constructing a correct search query for Google to process and having the ability to comb through resources that interpretes into a potential solution for you is a great skill to have as well."
+                }
+              </div>
+
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__xxXhC
+                )}
+              >
+                {"Side self-study"}
+              </h2>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__d6Srm
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  <ol
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.ol,
+                      sty.ol___54JwV
+                    )}
+                  >
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__taAk
+                      )}
+                    >
+                      {
+                        "Conduct a Google search on what software development life cycle (SDLC) is and document your finding in a Google word file."
+                      }
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__qv40X
+                      )}
+                    >
+                      {
+                        "Conduct another Google search, understand what LAMP stack means."
+                      }
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__x6Ou0
+                      )}
+                    >
+                      {
+                        "Read about ‘chmod’ and ‘chown’ commands in Linux and understand how access and ownership of files and directories work."
+                      }
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__gjJrx
+                      )}
+                    >
+                      {
+                        "Learn what TCP and UPD terms mean and how they are different. "
+                      }
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__nJlNn
+                      )}
+                    >
+                      {
+                        "List down ports most commonly used in Web (http, https, ssh, telnet, ftp, sftp, telnet)"
+                      }
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__kku0G
+                      )}
+                    >
+                      <React.Fragment>
+                        <React.Fragment>
+                          {"Get yourself familiar with basic text editing in "}
+                        </React.Fragment>
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            projectcss.plasmic_default__inline,
+                            sty.link__wEa7S
+                          )}
+                          component={Link}
+                          href={"akersystems.com" as const}
+                          platform={"nextjs"}
+                        >
+                          {"Vi (Vim)"}
+                        </p.PlasmicLink>
+                        <React.Fragment>{" editor. "}</React.Fragment>
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            projectcss.plasmic_default__inline,
+                            sty.link___6EAgI
+                          )}
+                          component={Link}
+                          href={"akerystems.com" as const}
+                          platform={"nextjs"}
+                        >
+                          {"Practice here"}
+                        </p.PlasmicLink>
+                        <React.Fragment>{"."}</React.Fragment>
+                      </React.Fragment>
+                    </li>
+                  </ol>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__a7NcN
+                )}
+              >
+                {
+                  "Instructions on how to submit your work for review and feedback"
+                }
+              </h2>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__xxCUp
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>
+                    {"To submit your work for review and feedback – "}
+                  </React.Fragment>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link___4THrh
+                    )}
+                    component={Link}
+                    href={"akersystems.com" as const}
+                    platform={"nextjs"}
+                  >
+                    {"follow this instruction"}
+                  </p.PlasmicLink>
+                  <React.Fragment>
+                    {
+                      ".\n\nAs a beginner it is good to also set up your workspace for learning. You can take a look at these video series to learn how to do that.\n\n"
+                    }
+                  </React.Fragment>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link__edl84
+                    )}
+                    component={Link}
+                    href={"akersystems.com" as const}
+                    platform={"nextjs"}
+                  >
+                    {"windows-installation:Part1"}
+                  </p.PlasmicLink>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link___6OOtx
+                    )}
+                    component={Link}
+                    href={"akersystems.com" as const}
+                    platform={"nextjs"}
+                  >
+                    {"windows-installation:Part2"}
+                  </p.PlasmicLink>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__qbLJp
+                )}
+              >
+                {"Step 0 – preparing prerequisites"}
+              </h2>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__fEAv0
+                )}
+              >
+                {
+                  "In order to complete this project you will need an AWS account and a virtual server with Ubuntu Server OS. AWS is the biggest Cloud Service Provider and it offers a free tier account that we are going to leverage for our projects. Do not focus too much on AWS itself right now, there will be a proper Cloud introduction and configuration projects later in our course. Right now, all we need to know is that AWS can provide us with a free virtual server called EC2 (Elastic Compute Cloud) for our needs. Spinning up a new EC2 instance (an instance of a virtual server) is only a matter of a few clicks. You can either watch the videos below to get yourself set up."
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vm3Qz
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link___6Oftj
+                    )}
+                    component={Link}
+                    href={"akersystems.com" as const}
+                    platform={"nextjs"}
+                  >
+                    {"AWS account setup and provisioning an Ubuntu Server"}
+                  </p.PlasmicLink>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link___1Flhj
+                    )}
+                    component={Link}
+                    href={"akersystems.com" as const}
+                    platform={"nextjs"}
+                  >
+                    {"Connecting to your EC2 Instance"}
+                  </p.PlasmicLink>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__p8Te
+                )}
+              >
+                {"Or follow the instructions below."}
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__wcVAb
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  <ol
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.ol,
+                      sty.ol__i8C4
+                    )}
+                  >
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__gyYpL
+                      )}
+                    >
+                      <React.Fragment>
+                        <React.Fragment>
+                          {"Register a new AWS account following "}
+                        </React.Fragment>
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            projectcss.plasmic_default__inline,
+                            sty.link__mVHon
+                          )}
+                          component={Link}
+                          href={"akersystems.com" as const}
+                          platform={"nextjs"}
+                        >
+                          {"this instruction"}
+                        </p.PlasmicLink>
+                        <React.Fragment>{"."}</React.Fragment>
+                      </React.Fragment>
+                    </li>
+
+                    <li
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.li,
+                        projectcss.__wab_text,
+                        sty.li__kqAjc
+                      )}
+                    >
+                      {
+                        "Select your preferred region (the closest to you) and launch a new EC2 instance of t2.micro family with Ubuntu Server 20.04 LTS (HVM)"
+                      }
+                    </li>
+                  </ol>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/aker_academy/images/launchEc2Gif.gif",
+                  fullWidth: 1853,
+                  fullHeight: 902,
+                  aspectRatio: undefined
+                }}
+              />
             </div>
           </div>
         </div>
@@ -219,28 +826,42 @@ const PlasmicDescendants = {
     "header",
     "pageHeading",
     "h1",
-    "text",
     "activitySubNavigation",
     "sectionBody",
     "containerProjectDetails",
     "buttonRow",
-    "button"
+    "button",
+    "buttonOutlined",
+    "ul",
+    "img"
   ],
-  sectionHero: ["sectionHero", "header", "pageHeading", "h1", "text"],
+  sectionHero: ["sectionHero", "header", "pageHeading", "h1"],
   header: ["header"],
-  pageHeading: ["pageHeading", "h1", "text"],
+  pageHeading: ["pageHeading", "h1"],
   h1: ["h1"],
-  text: ["text"],
   activitySubNavigation: ["activitySubNavigation"],
   sectionBody: [
     "sectionBody",
     "containerProjectDetails",
     "buttonRow",
-    "button"
+    "button",
+    "buttonOutlined",
+    "ul",
+    "img"
   ],
-  containerProjectDetails: ["containerProjectDetails", "buttonRow", "button"],
-  buttonRow: ["buttonRow", "button"],
-  button: ["button"]
+  containerProjectDetails: [
+    "containerProjectDetails",
+    "buttonRow",
+    "button",
+    "buttonOutlined",
+    "ul",
+    "img"
+  ],
+  buttonRow: ["buttonRow", "button", "buttonOutlined"],
+  button: ["button"],
+  buttonOutlined: ["buttonOutlined"],
+  ul: ["ul"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -251,12 +872,14 @@ type NodeDefaultElementType = {
   header: typeof Header;
   pageHeading: typeof PageHeading;
   h1: "h1";
-  text: "div";
   activitySubNavigation: typeof ActivitySubNavigation;
   sectionBody: "div";
   containerProjectDetails: "div";
   buttonRow: "div";
   button: typeof Button;
+  buttonOutlined: typeof ButtonOutlined;
+  ul: "ul";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -328,12 +951,14 @@ export const PlasmicStep3Project1LampStackImplementation = Object.assign(
     header: makeNodeComponent("header"),
     pageHeading: makeNodeComponent("pageHeading"),
     h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
     activitySubNavigation: makeNodeComponent("activitySubNavigation"),
     sectionBody: makeNodeComponent("sectionBody"),
     containerProjectDetails: makeNodeComponent("containerProjectDetails"),
     buttonRow: makeNodeComponent("buttonRow"),
     button: makeNodeComponent("button"),
+    buttonOutlined: makeNodeComponent("buttonOutlined"),
+    ul: makeNodeComponent("ul"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicStep3Project1LampStackImplementation
     internalVariantProps:

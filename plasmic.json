@@ -681,6 +681,11 @@
           "id": "bPHU_9iSz",
           "name": "avatar-placeholder.jpg 2",
           "filePath": "../public/plasmic/aker_academy/images/avatarPlaceholderjpg2.jpeg"
+        },
+        {
+          "id": "zoIfdlDLr",
+          "name": "LaunchEC2.gif",
+          "filePath": "../public/plasmic/aker_academy/images/launchEc2Gif.gif"
         }
       ],
       "indirect": false,
