@@ -81,6 +81,12 @@
   align-self: auto;
   flex-shrink: 0;
 }
+.text___6Enno {
+  color: var(--token-W-7uFIfv4);
+}
+.text__h1Y0F {
+  color: var(--token-W-7uFIfv4);
+}
 .sectionBody {
   display: flex;
   position: relative;
@@ -338,7 +344,7 @@
   display: flex;
   margin-bottom: 40px;
 }
-.text {
+.text___25E5Y {
   width: 100%;
   height: auto;
   max-width: 800px;

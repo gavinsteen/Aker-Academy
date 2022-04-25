@@ -84,7 +84,6 @@ export type PlasmicAccountSettings__OverridesType = {
   fieldLabelFirstName4?: p.Flex<"div">;
   fieldHelpText2?: p.Flex<"div">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultAccountSettingsProps {}
@@ -193,9 +192,27 @@ function PlasmicAccountSettings__RenderFunc(props: {
                 "__wab_instance",
                 sty.activitySubNavigation
               )}
-              slot={"Logout"}
+              slot={
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__h1Y0F
+                  )}
+                >
+                  {"Logout"}
+                </div>
+              }
             >
-              {"Settings"}
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___6Enno
+                )}
+              >
+                {"Settings"}
+              </div>
             </ActivitySubNavigation>
           ) : null}
 
@@ -389,12 +406,10 @@ function PlasmicAccountSettings__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   <div
-                    data-plasmic-name={"text"}
-                    data-plasmic-override={overrides.text}
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text
+                      sty.text___25E5Y
                     )}
                   >
                     {"Change password"}
@@ -446,8 +461,7 @@ const PlasmicDescendants = {
     "fieldPassword",
     "fieldLabelFirstName4",
     "fieldHelpText2",
-    "link",
-    "text"
+    "link"
   ],
   sectionBanner: [
     "sectionBanner",
@@ -480,8 +494,7 @@ const PlasmicDescendants = {
     "fieldPassword",
     "fieldLabelFirstName4",
     "fieldHelpText2",
-    "link",
-    "text"
+    "link"
   ],
   containerBody: [
     "containerBody",
@@ -499,8 +512,7 @@ const PlasmicDescendants = {
     "fieldPassword",
     "fieldLabelFirstName4",
     "fieldHelpText2",
-    "link",
-    "text"
+    "link"
   ],
   accountSettingsForm: [
     "accountSettingsForm",
@@ -517,8 +529,7 @@ const PlasmicDescendants = {
     "fieldPassword",
     "fieldLabelFirstName4",
     "fieldHelpText2",
-    "link",
-    "text"
+    "link"
   ],
   fieldPhoto: [
     "fieldPhoto",
@@ -538,8 +549,7 @@ const PlasmicDescendants = {
   fieldPassword: ["fieldPassword", "fieldLabelFirstName4", "fieldHelpText2"],
   fieldLabelFirstName4: ["fieldLabelFirstName4"],
   fieldHelpText2: ["fieldHelpText2"],
-  link: ["link", "text"],
-  text: ["text"]
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -570,7 +580,6 @@ type NodeDefaultElementType = {
   fieldLabelFirstName4: "div";
   fieldHelpText2: "div";
   link: "a";
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -654,7 +663,6 @@ export const PlasmicAccountSettings = Object.assign(
     fieldLabelFirstName4: makeNodeComponent("fieldLabelFirstName4"),
     fieldHelpText2: makeNodeComponent("fieldHelpText2"),
     link: makeNodeComponent("link"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicAccountSettings
     internalVariantProps: PlasmicAccountSettings__VariantProps,
