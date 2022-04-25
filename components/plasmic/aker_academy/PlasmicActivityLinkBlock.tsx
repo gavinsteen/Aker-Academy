@@ -55,22 +55,26 @@ export const PlasmicActivityLinkBlock__VariantProps =
 export type PlasmicActivityLinkBlock__ArgsType = {
   children?: React.ReactNode;
   slot?: React.ReactNode;
+  slot2?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicActivityLinkBlock__ArgsType;
 export const PlasmicActivityLinkBlock__ArgProps = new Array<ArgPropType>(
   "children",
-  "slot"
+  "slot",
+  "slot2"
 );
 
 export type PlasmicActivityLinkBlock__OverridesType = {
   root?: p.Flex<"div">;
   text?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultActivityLinkBlockProps {
   children?: React.ReactNode;
   slot?: React.ReactNode;
+  slot2?: React.ReactNode;
   project?: SingleBooleanChoiceArg<"project">;
   className?: string;
 }
@@ -182,6 +186,35 @@ function PlasmicActivityLinkBlock__RenderFunc(props: {
               className: classNames(sty.slotTargetSlot)
             })}
           </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__nwZwV)}>
+            <p.PlasmicImg
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img)}
+              displayHeight={"24px" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"24px" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/aker_academy/images/icons8Time48Png.png",
+                fullWidth: 48,
+                fullHeight: 48,
+                aspectRatio: undefined
+              }}
+            />
+
+            <div className={classNames(projectcss.all, sty.freeBox__wIZu2)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "20 mins",
+                value: args.slot2
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -189,8 +222,9 @@ function PlasmicActivityLinkBlock__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root", "text", "img"],
+  text: ["text"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -198,6 +232,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   text: "div";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -258,6 +293,7 @@ export const PlasmicActivityLinkBlock = Object.assign(
   {
     // Helper components rendering sub-elements
     text: makeNodeComponent("text"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicActivityLinkBlock
     internalVariantProps: PlasmicActivityLinkBlock__VariantProps,

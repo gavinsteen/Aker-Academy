@@ -384,6 +384,19 @@
           "cssFilePath": "plasmic/aker_academy/PlasmicBackLink.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "vzKKhohT3V",
+          "name": "Create",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicCreate.tsx",
+          "importSpec": {
+            "modulePath": "../pages/create.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicCreate.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -436,19 +449,39 @@
           "id": "3XRP6YsMa",
           "name": "BackArrowIcon",
           "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__BackArrow.tsx"
+        },
+        {
+          "id": "LPB3-ORsE",
+          "name": "Icons8NotificationsvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8Notificationsvg.tsx"
+        },
+        {
+          "id": "XveKaqTHr",
+          "name": "Icons8PlusSvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8PlusSvg.tsx"
+        },
+        {
+          "id": "6HtaoiiQa",
+          "name": "Icons8SettingssvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8Settingssvg.tsx"
+        },
+        {
+          "id": "f7T7BOUV_",
+          "name": "Icons8SigninsvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8Signinsvg.tsx"
+        },
+        {
+          "id": "IoHdNrROb",
+          "name": "Icons8TeachersvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8Teachersvg.tsx"
+        },
+        {
+          "id": "OlWsaiaXf",
+          "name": "Icons8SchoolsvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8Schoolsvg.tsx"
         }
       ],
       "images": [
-        {
-          "id": "GdPnjq64YwQ0",
-          "name": "image",
-          "filePath": "../public/plasmic/aker_academy/images/image.svg"
-        },
-        {
-          "id": "1RZ8SFXXyjYW",
-          "name": "image 2",
-          "filePath": "../public/plasmic/aker_academy/images/image2.jpeg"
-        },
         {
           "id": "zQPB1GOEh",
           "name": "aker-logo-reverse.png",
@@ -573,6 +606,21 @@
           "id": "C-rJkmcIxQ",
           "name": "icons8-reply-arrow.svg",
           "filePath": "../public/plasmic/aker_academy/images/icons8ReplyArrowsvg.svg"
+        },
+        {
+          "id": "yzB2j-TED",
+          "name": "icons8-signin-48.png",
+          "filePath": "../public/plasmic/aker_academy/images/icons8Signin48Png.png"
+        },
+        {
+          "id": "FNdq8Lf5X",
+          "name": "icons8-signin-48 (1).png",
+          "filePath": "../public/plasmic/aker_academy/images/icons8Signin481Png.png"
+        },
+        {
+          "id": "SfqjoOmwX",
+          "name": "avatar-placeholder.jpg",
+          "filePath": "../public/plasmic/aker_academy/images/avatarPlaceholderjpg.jpeg"
         }
       ],
       "indirect": false,

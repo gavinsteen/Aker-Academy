@@ -85,7 +85,7 @@
   margin-top: 16px;
   align-self: center;
   margin-bottom: 80px;
-  padding: var(--token-RGyKlVagZ) var(--token-RGyKlVagZ) 40%;
+  padding: var(--token-RGyKlVagZ) var(--token-RGyKlVagZ) 24px;
 }
 @media (max-width: 1024px) {
   .freeBox__s4TnK {
@@ -360,4 +360,101 @@
   max-width: 800px;
   color: var(--token-kDk2RkWQ2);
   min-width: 0;
+}
+.sectionFooter {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: var(--token-f_LZh22RD);
+  min-width: 0;
+  padding: 24px;
+}
+.sectionFooter > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  min-width: 0;
+  margin-left: calc(0px - 40px);
+  width: calc(100% + 40px);
+}
+.sectionFooter > :global(.__wab_flex-container) > *,
+.sectionFooter > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.sectionFooter > :global(.__wab_flex-container) > picture > img,
+.sectionFooter
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 40px;
+}
+.containerFooter {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.footerLeft {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.text__ozuHs {
+  color: var(--token-HzYxHSeBA);
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.footerRight {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.link___5TZDz {
+  color: var(--token-HzYxHSeBA);
+  position: relative;
+}
+.freeBox__o7Ss3 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1px;
+  height: 32px;
+  max-width: 100%;
+  background: var(--token-HzYxHSeBA);
+  margin-left: 16px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+.link__frLSj {
+  color: var(--token-HzYxHSeBA);
+  position: relative;
 }

@@ -44,11 +44,18 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_aker_academy.module.css"; // plasmic-import: sog8262LcebSfK4tonEqFh/projectcss
 import sty from "./PlasmicDevOpsAcademy.module.css"; // plasmic-import: SLoEy8U2Bb/css
 
-export type PlasmicDevOpsAcademy__VariantMembers = {};
+export type PlasmicDevOpsAcademy__VariantMembers = {
+  signedOut: "signedIn";
+};
 
-export type PlasmicDevOpsAcademy__VariantsArgs = {};
+export type PlasmicDevOpsAcademy__VariantsArgs = {
+  signedOut?: SingleChoiceArg<"signedIn">;
+};
+
 type VariantPropType = keyof PlasmicDevOpsAcademy__VariantsArgs;
-export const PlasmicDevOpsAcademy__VariantProps = new Array<VariantPropType>();
+export const PlasmicDevOpsAcademy__VariantProps = new Array<VariantPropType>(
+  "signedOut"
+);
 
 export type PlasmicDevOpsAcademy__ArgsType = {};
 type ArgPropType = keyof PlasmicDevOpsAcademy__ArgsType;
@@ -62,6 +69,10 @@ export type PlasmicDevOpsAcademy__OverridesType = {
   sectionBody?: p.Flex<"div">;
   h2?: p.Flex<"h2">;
   reveal?: p.Flex<typeof Reveal>;
+  sectionFooter?: p.Flex<"div">;
+  containerFooter?: p.Flex<"div">;
+  footerLeft?: p.Flex<"div">;
+  footerRight?: p.Flex<"div">;
 };
 
 export interface DefaultDevOpsAcademyProps {}
@@ -98,7 +109,14 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [sty.rootsignedOut_signedIn]: hasVariant(
+                variants,
+                "signedOut",
+                "signedIn"
+              )
+            }
           )}
         >
           {true ? (
@@ -111,7 +129,18 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
                 <Header
                   data-plasmic-name={"header"}
                   data-plasmic-override={overrides.header}
-                  className={classNames("__wab_instance", sty.header)}
+                  className={classNames("__wab_instance", sty.header, {
+                    [sty.headersignedOut_signedIn]: hasVariant(
+                      variants,
+                      "signedOut",
+                      "signedIn"
+                    )
+                  })}
+                  state={
+                    hasVariant(variants, "signedOut", "signedIn")
+                      ? ("signedIn" as const)
+                      : undefined
+                  }
                 />
               ) : null}
               {true ? (
@@ -195,6 +224,29 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
                       "__wab_instance",
                       sty.activityLinkBlock__cShLn
                     )}
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__e9Tf5
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#757575" }}
+                          >
+                            {"Step 1:"}
+                          </span>
+                          <React.Fragment>{" Onboarding"}</React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    }
+                    slot2={"16 mins"}
                   >
                     <p.PlasmicImg
                       alt={""}
@@ -578,6 +630,74 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
               </Reveal>
             </div>
           </div>
+
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"sectionFooter"}
+            data-plasmic-override={overrides.sectionFooter}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.sectionFooter)}
+          >
+            <div
+              data-plasmic-name={"containerFooter"}
+              data-plasmic-override={overrides.containerFooter}
+              className={classNames(projectcss.all, sty.containerFooter)}
+            >
+              <div
+                data-plasmic-name={"footerLeft"}
+                data-plasmic-override={overrides.footerLeft}
+                className={classNames(projectcss.all, sty.footerLeft)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ozuHs
+                  )}
+                >
+                  {"© Copyright Aker Systems Limited"}
+                </div>
+              </div>
+
+              <div
+                data-plasmic-name={"footerRight"}
+                data-plasmic-override={overrides.footerRight}
+                className={classNames(projectcss.all, sty.footerRight)}
+              >
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link___5TZDz
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/" as const}
+                  platform={"nextjs"}
+                >
+                  {"Privacy and cookies"}
+                </p.PlasmicLink>
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__o7Ss3)}
+                />
+
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__frLSj
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/" as const}
+                  platform={"nextjs"}
+                >
+                  {"Terms and conditions"}
+                </p.PlasmicLink>
+              </div>
+            </div>
+          </p.Stack>
         </div>
       </div>
     </React.Fragment>
@@ -592,14 +712,27 @@ const PlasmicDescendants = {
     "pageHeading",
     "sectionBody",
     "h2",
-    "reveal"
+    "reveal",
+    "sectionFooter",
+    "containerFooter",
+    "footerLeft",
+    "footerRight"
   ],
   sectionHero: ["sectionHero", "header", "pageHeading"],
   header: ["header"],
   pageHeading: ["pageHeading"],
   sectionBody: ["sectionBody", "h2", "reveal"],
   h2: ["h2"],
-  reveal: ["reveal"]
+  reveal: ["reveal"],
+  sectionFooter: [
+    "sectionFooter",
+    "containerFooter",
+    "footerLeft",
+    "footerRight"
+  ],
+  containerFooter: ["containerFooter", "footerLeft", "footerRight"],
+  footerLeft: ["footerLeft"],
+  footerRight: ["footerRight"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -612,6 +745,10 @@ type NodeDefaultElementType = {
   sectionBody: "div";
   h2: "h2";
   reveal: typeof Reveal;
+  sectionFooter: "div";
+  containerFooter: "div";
+  footerLeft: "div";
+  footerRight: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -677,6 +814,10 @@ export const PlasmicDevOpsAcademy = Object.assign(
     sectionBody: makeNodeComponent("sectionBody"),
     h2: makeNodeComponent("h2"),
     reveal: makeNodeComponent("reveal"),
+    sectionFooter: makeNodeComponent("sectionFooter"),
+    containerFooter: makeNodeComponent("containerFooter"),
+    footerLeft: makeNodeComponent("footerLeft"),
+    footerRight: makeNodeComponent("footerRight"),
 
     // Metadata about props expected for PlasmicDevOpsAcademy
     internalVariantProps: PlasmicDevOpsAcademy__VariantProps,
