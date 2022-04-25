@@ -37,14 +37,15 @@ import {
 import Header from "../../Header"; // plasmic-import: Nxyr3sFmDS/component
 import PageHeading from "../../PageHeading"; // plasmic-import: XPfe-LECZQ/component
 import ActivitySubNavigation from "../../ActivitySubNavigation"; // plasmic-import: wjbmsNY1FAt/component
-import EnrolBlock from "../../EnrolBlock"; // plasmic-import: F9ColP2Mm0/component
-import ModuleBlock from "../../ModuleBlock"; // plasmic-import: OGBnjhx9vmv/component
-import UnitLink from "../../UnitLink"; // plasmic-import: Bq5HbP3pCG/component
+import Button from "../../Button"; // plasmic-import: SpJlpkBmbsK/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_aker_academy.module.css"; // plasmic-import: sog8262LcebSfK4tonEqFh/projectcss
 import sty from "./PlasmicStep3Project1LampStackImplementation.module.css"; // plasmic-import: 6Y659n9eOk8/css
+
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: g1ioEUoyUBu/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: UiMMPgDsW7t/icon
 
 export type PlasmicStep3Project1LampStackImplementation__VariantMembers = {
   enrolled: "enrolled";
@@ -70,9 +71,12 @@ export type PlasmicStep3Project1LampStackImplementation__OverridesType = {
   header?: p.Flex<typeof Header>;
   pageHeading?: p.Flex<typeof PageHeading>;
   h1?: p.Flex<"h1">;
+  text?: p.Flex<"div">;
   activitySubNavigation?: p.Flex<typeof ActivitySubNavigation>;
   sectionBody?: p.Flex<"div">;
-  enrolBlock?: p.Flex<typeof EnrolBlock>;
+  containerProjectDetails?: p.Flex<"div">;
+  buttonRow?: p.Flex<"div">;
+  button?: p.Flex<typeof Button>;
 };
 
 export interface DefaultStep3Project1LampStackImplementationProps {}
@@ -133,10 +137,12 @@ function PlasmicStep3Project1LampStackImplementation__RenderFunc(props: {
                   slot={
                     true ? (
                       <div
+                        data-plasmic-name={"text"}
+                        data-plasmic-override={overrides.text}
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__lnOT
+                          sty.text
                         )}
                       >
                         {"Lessons 1 -2"}
@@ -177,77 +183,27 @@ function PlasmicStep3Project1LampStackImplementation__RenderFunc(props: {
             data-plasmic-override={overrides.sectionBody}
             className={classNames(projectcss.all, sty.sectionBody)}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__tEaAz)}>
-              <EnrolBlock
-                data-plasmic-name={"enrolBlock"}
-                data-plasmic-override={overrides.enrolBlock}
-                className={classNames("__wab_instance", sty.enrolBlock, {
-                  [sty.enrolBlockenrolled]: hasVariant(
-                    variants,
-                    "enrolled",
-                    "enrolled"
-                  )
-                })}
-                enrolled={
-                  hasVariant(variants, "enrolled", "enrolled")
-                    ? true
-                    : undefined
-                }
-              />
-
+            <div
+              data-plasmic-name={"containerProjectDetails"}
+              data-plasmic-override={overrides.containerProjectDetails}
+              className={classNames(
+                projectcss.all,
+                sty.containerProjectDetails
+              )}
+            >
               <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__dnZk
-                )}
+                data-plasmic-name={"buttonRow"}
+                data-plasmic-override={overrides.buttonRow}
+                className={classNames(projectcss.all, sty.buttonRow)}
               >
-                {
-                  "If you are considering a career path in DevOps, or Cloud engineering on either AWS, Google, Azure, Digital Ocean, Ali baba, or even in Private Cloud platforms, This video is your very first step to getting technically hands-on as a complete beginner. Because Linux is the most popular Operating System powering the greatest software programs and websites used by both startups and big companies such as Facebook, Google, Amazon, Netflix, and most banks in the world, It is very important that you understand what it is, before you even think of laying your hands on the terminal."
-                }
+                <Button
+                  data-plasmic-name={"button"}
+                  data-plasmic-override={overrides.button}
+                  className={classNames("__wab_instance", sty.button)}
+                >
+                  {"Mark as complete"}
+                </Button>
               </div>
-
-              <ModuleBlock
-                className={classNames(
-                  "__wab_instance",
-                  sty.moduleBlock__pp2Kf,
-                  {
-                    [sty.moduleBlockenrolled__pp2Kf7Ud1G]: hasVariant(
-                      variants,
-                      "enrolled",
-                      "enrolled"
-                    )
-                  }
-                )}
-                enrolled={
-                  hasVariant(variants, "enrolled", "enrolled")
-                    ? true
-                    : undefined
-                }
-              >
-                {"Module 1: Set up your environment"}
-              </ModuleBlock>
-
-              <ModuleBlock
-                className={classNames(
-                  "__wab_instance",
-                  sty.moduleBlock__jxjlD,
-                  {
-                    [sty.moduleBlockenrolled__jxjlD7Ud1G]: hasVariant(
-                      variants,
-                      "enrolled",
-                      "enrolled"
-                    )
-                  }
-                )}
-                enrolled={
-                  hasVariant(variants, "enrolled", "enrolled")
-                    ? true
-                    : undefined
-                }
-              >
-                {"Module 1: Set up your environment"}
-              </ModuleBlock>
             </div>
           </div>
         </div>
@@ -263,17 +219,28 @@ const PlasmicDescendants = {
     "header",
     "pageHeading",
     "h1",
+    "text",
     "activitySubNavigation",
     "sectionBody",
-    "enrolBlock"
+    "containerProjectDetails",
+    "buttonRow",
+    "button"
   ],
-  sectionHero: ["sectionHero", "header", "pageHeading", "h1"],
+  sectionHero: ["sectionHero", "header", "pageHeading", "h1", "text"],
   header: ["header"],
-  pageHeading: ["pageHeading", "h1"],
+  pageHeading: ["pageHeading", "h1", "text"],
   h1: ["h1"],
+  text: ["text"],
   activitySubNavigation: ["activitySubNavigation"],
-  sectionBody: ["sectionBody", "enrolBlock"],
-  enrolBlock: ["enrolBlock"]
+  sectionBody: [
+    "sectionBody",
+    "containerProjectDetails",
+    "buttonRow",
+    "button"
+  ],
+  containerProjectDetails: ["containerProjectDetails", "buttonRow", "button"],
+  buttonRow: ["buttonRow", "button"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -284,9 +251,12 @@ type NodeDefaultElementType = {
   header: typeof Header;
   pageHeading: typeof PageHeading;
   h1: "h1";
+  text: "div";
   activitySubNavigation: typeof ActivitySubNavigation;
   sectionBody: "div";
-  enrolBlock: typeof EnrolBlock;
+  containerProjectDetails: "div";
+  buttonRow: "div";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -358,9 +328,12 @@ export const PlasmicStep3Project1LampStackImplementation = Object.assign(
     header: makeNodeComponent("header"),
     pageHeading: makeNodeComponent("pageHeading"),
     h1: makeNodeComponent("h1"),
+    text: makeNodeComponent("text"),
     activitySubNavigation: makeNodeComponent("activitySubNavigation"),
     sectionBody: makeNodeComponent("sectionBody"),
-    enrolBlock: makeNodeComponent("enrolBlock"),
+    containerProjectDetails: makeNodeComponent("containerProjectDetails"),
+    buttonRow: makeNodeComponent("buttonRow"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicStep3Project1LampStackImplementation
     internalVariantProps:

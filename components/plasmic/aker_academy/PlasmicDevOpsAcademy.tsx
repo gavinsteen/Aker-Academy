@@ -139,7 +139,7 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
                   state={
                     hasVariant(variants, "signedOut", "signedIn")
                       ? ("signedIn" as const)
-                      : undefined
+                      : ("signedIn" as const)
                   }
                 />
               ) : null}
@@ -159,7 +159,7 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
                           )}
                         >
                           {
-                            "Become a DevOps Engineer in 3 months through our fast track Masterclass training programme."
+                            "Become a DevOps Engineer in 6 months through our fast track Masterclass training programme."
                           }
                         </div>
                       ) : null
@@ -194,7 +194,7 @@ function PlasmicDevOpsAcademy__RenderFunc(props: {
                 )}
               >
                 {
-                  "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.\n\nVestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta."
+                  "This intensive programme takes you from ground zero all the way to becoming a professional DevOps consultant with experience deploying enterprise-level solutions.\n\nYou are guaranteed to acquire skills through the hands-on implementation of 30 projects using real-world use cases."
                 }
               </div>
 

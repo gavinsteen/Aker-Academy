@@ -1,14 +1,15 @@
 .root {
   flex-direction: row;
-  display: flex;
+  display: inline-flex;
   position: relative;
   background: var(--token-W-7uFIfv4);
   cursor: pointer;
   transition-property: background, all;
   transition-duration: 0.4s, 0.4s;
+  width: auto;
   border-radius: 1px;
   padding: 12px 20px;
-  border: 1px none var(--token-W-7uFIfv4);
+  border: 1px solid var(--token-W-7uFIfv4);
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -64,6 +65,9 @@
 }
 .rootcolor_link {
   background: #ffffff00;
+}
+.rootoutlined {
+  background: #0f47a100;
 }
 .rootisDisabled {
   cursor: not-allowed;
@@ -258,7 +262,7 @@
   outline: none;
 }
 .slotTargetChildren {
-  color: #ededec;
+  color: var(--token-kDk2RkWQ2);
   font-weight: 500;
   white-space: pre;
 }
@@ -297,6 +301,9 @@
 }
 .slotTargetChildrencolor_link {
   color: #0091ff;
+}
+.slotTargetChildrenoutlined {
+  color: var(--token-W-7uFIfv4);
 }
 .slotTargetChildrencolor_blue {
   color: #ffffff;

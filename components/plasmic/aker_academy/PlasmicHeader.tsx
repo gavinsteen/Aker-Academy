@@ -220,21 +220,44 @@ function PlasmicHeader__RenderFunc(props: {
                 )
               })}
             >
-              {(hasVariant(variants, "state", "signedIn") ? true : true) ? (
-                <Icons8PlusSvgIcon
-                  className={classNames(projectcss.all, sty.svg__dfRow, {
-                    [sty.svgheaderSolid_state_signedIn__dfRow3I7V9922Ef]:
-                      hasVariant(variants, "state", "signedIn") &&
-                      hasVariant(variants, "headerSolid", "headerSolid"),
-                    [sty.svgstate_signedIn__dfRow922Ef]: hasVariant(
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link___31Ki,
+                  {
+                    [sty.linkstate_signedIn___31Ki922Ef]: hasVariant(
                       variants,
                       "state",
                       "signedIn"
                     )
-                  })}
-                  role={"img"}
-                />
-              ) : null}
+                  }
+                )}
+                component={Link}
+                href={
+                  hasVariant(variants, "state", "signedIn")
+                    ? ("/create" as const)
+                    : undefined
+                }
+                platform={"nextjs"}
+              >
+                {(hasVariant(variants, "state", "signedIn") ? true : true) ? (
+                  <Icons8PlusSvgIcon
+                    className={classNames(projectcss.all, sty.svg__dfRow, {
+                      [sty.svgheaderSolid_state_signedIn__dfRow3I7V9922Ef]:
+                        hasVariant(variants, "state", "signedIn") &&
+                        hasVariant(variants, "headerSolid", "headerSolid"),
+                      [sty.svgstate_signedIn__dfRow922Ef]: hasVariant(
+                        variants,
+                        "state",
+                        "signedIn"
+                      )
+                    })}
+                    role={"img"}
+                  />
+                ) : null}
+              </p.PlasmicLink>
+
               {(hasVariant(variants, "state", "signedIn") ? true : false) ? (
                 <Icons8NotificationsvgIcon
                   className={classNames(projectcss.all, sty.svg__esoNq, {
@@ -250,21 +273,45 @@ function PlasmicHeader__RenderFunc(props: {
                   role={"img"}
                 />
               ) : null}
-              {(hasVariant(variants, "state", "signedIn") ? true : false) ? (
-                <Icons8SettingssvgIcon
-                  className={classNames(projectcss.all, sty.svg__hh7Um, {
-                    [sty.svgheaderSolid_state_signedIn__hh7Um3I7V9922Ef]:
-                      hasVariant(variants, "state", "signedIn") &&
-                      hasVariant(variants, "headerSolid", "headerSolid"),
-                    [sty.svgstate_signedIn__hh7Um922Ef]: hasVariant(
+
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link___9Ymm9,
+                  {
+                    [sty.linkstate_signedIn___9Ymm9922Ef]: hasVariant(
                       variants,
                       "state",
                       "signedIn"
                     )
-                  })}
-                  role={"img"}
-                />
-              ) : null}
+                  }
+                )}
+                component={Link}
+                href={
+                  hasVariant(variants, "state", "signedIn")
+                    ? ("/account-settings" as const)
+                    : undefined
+                }
+                platform={"nextjs"}
+              >
+                {(hasVariant(variants, "state", "signedIn") ? true : false) ? (
+                  <Icons8SettingssvgIcon
+                    className={classNames(projectcss.all, sty.svg__hh7Um, {
+                      [sty.svgheaderSolid_state_signedIn__hh7Um3I7V9922Ef]:
+                        hasVariant(variants, "state", "signedIn") &&
+                        hasVariant(variants, "headerSolid", "headerSolid"),
+                      [sty.svgstate_signedIn__hh7Um922Ef]: hasVariant(
+                        variants,
+                        "state",
+                        "signedIn"
+                      )
+                    })}
+                    role={"img"}
+                  />
+                ) : null}
+              </p.PlasmicLink>
+
               {(hasVariant(variants, "state", "signedIn") ? true : true) ? (
                 <p.PlasmicImg
                   alt={""}

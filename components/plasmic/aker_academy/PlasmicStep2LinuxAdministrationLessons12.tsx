@@ -121,7 +121,18 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
             <Header
               data-plasmic-name={"header"}
               data-plasmic-override={overrides.header}
-              className={classNames("__wab_instance", sty.header)}
+              className={classNames("__wab_instance", sty.header, {
+                [sty.headerenrolled]: hasVariant(
+                  variants,
+                  "enrolled",
+                  "enrolled"
+                )
+              })}
+              state={
+                hasVariant(variants, "enrolled", "enrolled")
+                  ? ("signedIn" as const)
+                  : undefined
+              }
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__mFyTr)}>

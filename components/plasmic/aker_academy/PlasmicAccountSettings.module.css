@@ -10,10 +10,6 @@
   min-width: 0;
   min-height: 0;
 }
-.header:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
 .sectionBanner {
   display: flex;
   position: relative;
@@ -26,6 +22,10 @@
   background: var(--token-W-7uFIfv4);
   min-width: 0;
 }
+.header:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
 .containerAccountHeading {
   display: flex;
   position: relative;
@@ -35,7 +35,7 @@
   width: var(--token-oT5QnAFXU);
   height: auto;
   max-width: 100%;
-  margin-top: 80px;
+  margin-top: 56px;
   margin-bottom: 56px;
   padding: 0px 24px;
 }
@@ -97,10 +97,22 @@
   height: auto;
   max-width: var(--token-oT5QnAFXU);
   margin-top: 56px;
+  margin-bottom: 80px;
   min-width: 0;
   padding: 0px 24px;
 }
-.h2 {
+.accountSettingsForm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 512px;
+  height: auto;
+  max-width: 100%;
+  padding: 8px;
+}
+.h2__z3Rpp {
   position: relative;
   width: 100%;
   height: auto;
@@ -108,7 +120,45 @@
   margin-bottom: 24px;
   min-width: 0;
 }
-.field {
+.fieldPhoto {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 16px;
+  min-width: 0;
+}
+.fieldLabelPhot {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-W-7uFIfv4);
+  font-size: 14px;
+  margin-bottom: 8px;
+  min-width: 0;
+}
+.fieldHelpText {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-4DSeXtXjh);
+  font-size: 14px;
+  margin-bottom: 8px;
+  margin-top: -8px;
+  min-width: 0;
+}
+.buttonOutlined:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.fieldFirstName {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -120,7 +170,7 @@
   margin-bottom: 16px;
   min-width: 0;
 }
-.fieldLabel {
+.fieldLabelFirstName {
   position: relative;
   width: 100%;
   height: auto;
@@ -130,19 +180,170 @@
   margin-bottom: 8px;
   min-width: 0;
 }
-.textInput:global(.__wab_instance) {
+.textInput__svEuK:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  height: 56px;
+  flex-shrink: 0;
 }
-.svg__lb0Au {
+.svg__vfdL6 {
   position: relative;
   object-fit: cover;
   width: 1em;
   height: 1em;
 }
-.svg__opRkZ {
+.svg__zzhVv {
   position: relative;
   object-fit: cover;
   width: 1em;
   height: 1em;
+}
+.fieldLastName {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 16px;
+  min-width: 0;
+}
+.fieldLabelLastName {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-W-7uFIfv4);
+  font-size: 14px;
+  margin-bottom: 8px;
+  min-width: 0;
+}
+.textInput__qpsrh:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  height: 56px;
+  flex-shrink: 0;
+}
+.svg__ei7Kk {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__jb0Mj {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.fieldEmail {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 16px;
+  min-width: 0;
+}
+.fieldLabelEmail {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-W-7uFIfv4);
+  font-size: 14px;
+  margin-bottom: 8px;
+  min-width: 0;
+}
+.textInput__jKq13:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  height: 56px;
+  flex-shrink: 0;
+}
+.svg__tAnPu {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__fSuD {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.fieldPassword {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 16px;
+  min-width: 0;
+}
+.fieldLabelFirstName4 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-W-7uFIfv4);
+  font-size: 14px;
+  margin-bottom: 8px;
+  min-width: 0;
+}
+.fieldHelpText2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-4DSeXtXjh);
+  font-size: 14px;
+  margin-bottom: 8px;
+  margin-top: -8px;
+  min-width: 0;
+}
+.textInput__loWjX:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  height: 56px;
+  flex-shrink: 0;
+}
+.svg__zh4Sv {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__vNkqY {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.link {
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+}
+.text {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.h2__pEsSa {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
 }

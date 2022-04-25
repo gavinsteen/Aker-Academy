@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: Nxyr3sFmDS/component
+import ButtonOutlined from "../../ButtonOutlined"; // plasmic-import: 2KszG0-KPy/component
 import TextInput from "../../TextInput"; // plasmic-import: HboA_9fv9kn/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -58,19 +59,30 @@ export const PlasmicAccountSettings__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAccountSettings__OverridesType = {
   root?: p.Flex<"div">;
-  header?: p.Flex<typeof Header>;
   sectionBanner?: p.Flex<"div">;
+  header?: p.Flex<typeof Header>;
   containerAccountHeading?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   freeBox?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   sectionBody?: p.Flex<"div">;
   containerBody?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
-  field?: p.Flex<"div">;
-  fieldLabel?: p.Flex<"div">;
-  textInput?: p.Flex<typeof TextInput>;
-  textbox?: p.Flex<typeof TextInput>;
+  accountSettingsForm?: p.Flex<"div">;
+  fieldPhoto?: p.Flex<"div">;
+  fieldLabelPhot?: p.Flex<"div">;
+  fieldHelpText?: p.Flex<"div">;
+  buttonOutlined?: p.Flex<typeof ButtonOutlined>;
+  fieldFirstName?: p.Flex<"div">;
+  fieldLabelFirstName?: p.Flex<"div">;
+  fieldLastName?: p.Flex<"div">;
+  fieldLabelLastName?: p.Flex<"div">;
+  fieldEmail?: p.Flex<"div">;
+  fieldLabelEmail?: p.Flex<"div">;
+  fieldPassword?: p.Flex<"div">;
+  fieldLabelFirstName4?: p.Flex<"div">;
+  fieldHelpText2?: p.Flex<"div">;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultAccountSettingsProps {}
@@ -110,19 +122,18 @@ function PlasmicAccountSettings__RenderFunc(props: {
             sty.root
           )}
         >
-          <Header
-            data-plasmic-name={"header"}
-            data-plasmic-override={overrides.header}
-            className={classNames("__wab_instance", sty.header)}
-            headerSolid={true}
-            state={"signedIn" as const}
-          />
-
           <div
             data-plasmic-name={"sectionBanner"}
             data-plasmic-override={overrides.sectionBanner}
             className={classNames(projectcss.all, sty.sectionBanner)}
           >
+            <Header
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              className={classNames("__wab_instance", sty.header)}
+              state={"signedIn" as const}
+            />
+
             <div
               data-plasmic-name={"containerAccountHeading"}
               data-plasmic-override={overrides.containerAccountHeading}
@@ -182,41 +193,208 @@ function PlasmicAccountSettings__RenderFunc(props: {
               data-plasmic-override={overrides.containerBody}
               className={classNames(projectcss.all, sty.containerBody)}
             >
-              <h2
-                data-plasmic-name={"h2"}
-                data-plasmic-override={overrides.h2}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2
-                )}
-              >
-                {"Account profile"}
-              </h2>
-
               <div
-                data-plasmic-name={"field"}
-                data-plasmic-override={overrides.field}
-                className={classNames(projectcss.all, sty.field)}
+                data-plasmic-name={"accountSettingsForm"}
+                data-plasmic-override={overrides.accountSettingsForm}
+                className={classNames(projectcss.all, sty.accountSettingsForm)}
               >
-                <div
-                  data-plasmic-name={"fieldLabel"}
-                  data-plasmic-override={overrides.fieldLabel}
+                <h2
                   className={classNames(
                     projectcss.all,
+                    projectcss.h2,
                     projectcss.__wab_text,
-                    sty.fieldLabel
+                    sty.h2__z3Rpp
                   )}
                 >
-                  {"Enter some text"}
+                  {"Account profile"}
+                </h2>
+
+                <div
+                  data-plasmic-name={"fieldPhoto"}
+                  data-plasmic-override={overrides.fieldPhoto}
+                  className={classNames(projectcss.all, sty.fieldPhoto)}
+                >
+                  <div
+                    data-plasmic-name={"fieldLabelPhot"}
+                    data-plasmic-override={overrides.fieldLabelPhot}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.fieldLabelPhot
+                    )}
+                  >
+                    {"Profile photo"}
+                  </div>
+
+                  <div
+                    data-plasmic-name={"fieldHelpText"}
+                    data-plasmic-override={overrides.fieldHelpText}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.fieldHelpText
+                    )}
+                  >
+                    {"Minimum size 160 x 160px"}
+                  </div>
+
+                  <ButtonOutlined
+                    data-plasmic-name={"buttonOutlined"}
+                    data-plasmic-override={overrides.buttonOutlined}
+                    className={classNames("__wab_instance", sty.buttonOutlined)}
+                  >
+                    {"Select image"}
+                  </ButtonOutlined>
                 </div>
 
-                <TextInput
-                  data-plasmic-name={"textInput"}
-                  data-plasmic-override={overrides.textInput}
-                  className={classNames("__wab_instance", sty.textInput)}
-                />
+                <div
+                  data-plasmic-name={"fieldFirstName"}
+                  data-plasmic-override={overrides.fieldFirstName}
+                  className={classNames(projectcss.all, sty.fieldFirstName)}
+                >
+                  <div
+                    data-plasmic-name={"fieldLabelFirstName"}
+                    data-plasmic-override={overrides.fieldLabelFirstName}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.fieldLabelFirstName
+                    )}
+                  >
+                    {"First name"}
+                  </div>
+
+                  <TextInput
+                    className={classNames(
+                      "__wab_instance",
+                      sty.textInput__svEuK
+                    )}
+                    placeholder={"" as const}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"fieldLastName"}
+                  data-plasmic-override={overrides.fieldLastName}
+                  className={classNames(projectcss.all, sty.fieldLastName)}
+                >
+                  <div
+                    data-plasmic-name={"fieldLabelLastName"}
+                    data-plasmic-override={overrides.fieldLabelLastName}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.fieldLabelLastName
+                    )}
+                  >
+                    {"Last name"}
+                  </div>
+
+                  <TextInput
+                    className={classNames(
+                      "__wab_instance",
+                      sty.textInput__qpsrh
+                    )}
+                    placeholder={"" as const}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"fieldEmail"}
+                  data-plasmic-override={overrides.fieldEmail}
+                  className={classNames(projectcss.all, sty.fieldEmail)}
+                >
+                  <div
+                    data-plasmic-name={"fieldLabelEmail"}
+                    data-plasmic-override={overrides.fieldLabelEmail}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.fieldLabelEmail
+                    )}
+                  >
+                    {"Email"}
+                  </div>
+
+                  <TextInput
+                    className={classNames(
+                      "__wab_instance",
+                      sty.textInput__jKq13
+                    )}
+                    placeholder={"" as const}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"fieldPassword"}
+                  data-plasmic-override={overrides.fieldPassword}
+                  className={classNames(projectcss.all, sty.fieldPassword)}
+                >
+                  <div
+                    data-plasmic-name={"fieldLabelFirstName4"}
+                    data-plasmic-override={overrides.fieldLabelFirstName4}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.fieldLabelFirstName4
+                    )}
+                  >
+                    {"Password"}
+                  </div>
+
+                  <div
+                    data-plasmic-name={"fieldHelpText2"}
+                    data-plasmic-override={overrides.fieldHelpText2}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.fieldHelpText2
+                    )}
+                  >
+                    {"Minimum 8 characters"}
+                  </div>
+
+                  <TextInput
+                    className={classNames(
+                      "__wab_instance",
+                      sty.textInput__loWjX
+                    )}
+                    defaultValue={"XXXXXX" as const}
+                    isDisabled={true}
+                    placeholder={"" as const}
+                  />
+                </div>
+
+                <p.PlasmicLink
+                  data-plasmic-name={"link"}
+                  data-plasmic-override={overrides.link}
+                  className={classNames(projectcss.all, projectcss.a, sty.link)}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    {"Change password"}
+                  </div>
+                </p.PlasmicLink>
+
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__pEsSa
+                  )}
+                >
+                  {"Communication preferences"}
+                </h2>
               </div>
             </div>
           </div>
@@ -229,28 +407,40 @@ function PlasmicAccountSettings__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "header",
     "sectionBanner",
+    "header",
     "containerAccountHeading",
     "img",
     "freeBox",
     "h1",
     "sectionBody",
     "containerBody",
-    "h2",
-    "field",
-    "fieldLabel",
-    "textInput",
-    "textbox"
+    "accountSettingsForm",
+    "fieldPhoto",
+    "fieldLabelPhot",
+    "fieldHelpText",
+    "buttonOutlined",
+    "fieldFirstName",
+    "fieldLabelFirstName",
+    "fieldLastName",
+    "fieldLabelLastName",
+    "fieldEmail",
+    "fieldLabelEmail",
+    "fieldPassword",
+    "fieldLabelFirstName4",
+    "fieldHelpText2",
+    "link",
+    "text"
   ],
-  header: ["header"],
   sectionBanner: [
     "sectionBanner",
+    "header",
     "containerAccountHeading",
     "img",
     "freeBox",
     "h1"
   ],
+  header: ["header"],
   containerAccountHeading: ["containerAccountHeading", "img", "freeBox", "h1"],
   img: ["img"],
   freeBox: ["freeBox", "h1"],
@@ -258,42 +448,110 @@ const PlasmicDescendants = {
   sectionBody: [
     "sectionBody",
     "containerBody",
-    "h2",
-    "field",
-    "fieldLabel",
-    "textInput",
-    "textbox"
+    "accountSettingsForm",
+    "fieldPhoto",
+    "fieldLabelPhot",
+    "fieldHelpText",
+    "buttonOutlined",
+    "fieldFirstName",
+    "fieldLabelFirstName",
+    "fieldLastName",
+    "fieldLabelLastName",
+    "fieldEmail",
+    "fieldLabelEmail",
+    "fieldPassword",
+    "fieldLabelFirstName4",
+    "fieldHelpText2",
+    "link",
+    "text"
   ],
   containerBody: [
     "containerBody",
-    "h2",
-    "field",
-    "fieldLabel",
-    "textInput",
-    "textbox"
+    "accountSettingsForm",
+    "fieldPhoto",
+    "fieldLabelPhot",
+    "fieldHelpText",
+    "buttonOutlined",
+    "fieldFirstName",
+    "fieldLabelFirstName",
+    "fieldLastName",
+    "fieldLabelLastName",
+    "fieldEmail",
+    "fieldLabelEmail",
+    "fieldPassword",
+    "fieldLabelFirstName4",
+    "fieldHelpText2",
+    "link",
+    "text"
   ],
-  h2: ["h2"],
-  field: ["field", "fieldLabel", "textInput", "textbox"],
-  fieldLabel: ["fieldLabel"],
-  textInput: ["textInput", "textbox"]
+  accountSettingsForm: [
+    "accountSettingsForm",
+    "fieldPhoto",
+    "fieldLabelPhot",
+    "fieldHelpText",
+    "buttonOutlined",
+    "fieldFirstName",
+    "fieldLabelFirstName",
+    "fieldLastName",
+    "fieldLabelLastName",
+    "fieldEmail",
+    "fieldLabelEmail",
+    "fieldPassword",
+    "fieldLabelFirstName4",
+    "fieldHelpText2",
+    "link",
+    "text"
+  ],
+  fieldPhoto: [
+    "fieldPhoto",
+    "fieldLabelPhot",
+    "fieldHelpText",
+    "buttonOutlined"
+  ],
+  fieldLabelPhot: ["fieldLabelPhot"],
+  fieldHelpText: ["fieldHelpText"],
+  buttonOutlined: ["buttonOutlined"],
+  fieldFirstName: ["fieldFirstName", "fieldLabelFirstName"],
+  fieldLabelFirstName: ["fieldLabelFirstName"],
+  fieldLastName: ["fieldLastName", "fieldLabelLastName"],
+  fieldLabelLastName: ["fieldLabelLastName"],
+  fieldEmail: ["fieldEmail", "fieldLabelEmail"],
+  fieldLabelEmail: ["fieldLabelEmail"],
+  fieldPassword: ["fieldPassword", "fieldLabelFirstName4", "fieldHelpText2"],
+  fieldLabelFirstName4: ["fieldLabelFirstName4"],
+  fieldHelpText2: ["fieldHelpText2"],
+  link: ["link", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  header: typeof Header;
   sectionBanner: "div";
+  header: typeof Header;
   containerAccountHeading: "div";
   img: typeof p.PlasmicImg;
   freeBox: "div";
   h1: "h1";
   sectionBody: "div";
   containerBody: "div";
-  h2: "h2";
-  field: "div";
-  fieldLabel: "div";
-  textInput: typeof TextInput;
+  accountSettingsForm: "div";
+  fieldPhoto: "div";
+  fieldLabelPhot: "div";
+  fieldHelpText: "div";
+  buttonOutlined: typeof ButtonOutlined;
+  fieldFirstName: "div";
+  fieldLabelFirstName: "div";
+  fieldLastName: "div";
+  fieldLabelLastName: "div";
+  fieldEmail: "div";
+  fieldLabelEmail: "div";
+  fieldPassword: "div";
+  fieldLabelFirstName4: "div";
+  fieldHelpText2: "div";
+  link: "a";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -353,18 +611,30 @@ export const PlasmicAccountSettings = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    header: makeNodeComponent("header"),
     sectionBanner: makeNodeComponent("sectionBanner"),
+    header: makeNodeComponent("header"),
     containerAccountHeading: makeNodeComponent("containerAccountHeading"),
     img: makeNodeComponent("img"),
     freeBox: makeNodeComponent("freeBox"),
     h1: makeNodeComponent("h1"),
     sectionBody: makeNodeComponent("sectionBody"),
     containerBody: makeNodeComponent("containerBody"),
-    h2: makeNodeComponent("h2"),
-    field: makeNodeComponent("field"),
-    fieldLabel: makeNodeComponent("fieldLabel"),
-    textInput: makeNodeComponent("textInput"),
+    accountSettingsForm: makeNodeComponent("accountSettingsForm"),
+    fieldPhoto: makeNodeComponent("fieldPhoto"),
+    fieldLabelPhot: makeNodeComponent("fieldLabelPhot"),
+    fieldHelpText: makeNodeComponent("fieldHelpText"),
+    buttonOutlined: makeNodeComponent("buttonOutlined"),
+    fieldFirstName: makeNodeComponent("fieldFirstName"),
+    fieldLabelFirstName: makeNodeComponent("fieldLabelFirstName"),
+    fieldLastName: makeNodeComponent("fieldLastName"),
+    fieldLabelLastName: makeNodeComponent("fieldLabelLastName"),
+    fieldEmail: makeNodeComponent("fieldEmail"),
+    fieldLabelEmail: makeNodeComponent("fieldLabelEmail"),
+    fieldPassword: makeNodeComponent("fieldPassword"),
+    fieldLabelFirstName4: makeNodeComponent("fieldLabelFirstName4"),
+    fieldHelpText2: makeNodeComponent("fieldHelpText2"),
+    link: makeNodeComponent("link"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicAccountSettings
     internalVariantProps: PlasmicAccountSettings__VariantProps,

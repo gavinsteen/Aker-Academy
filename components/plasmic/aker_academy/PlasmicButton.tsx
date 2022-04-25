@@ -63,6 +63,7 @@ export type PlasmicButton__VariantMembers = {
     | "softSand"
     | "clear"
     | "link";
+  outlined: "outlined";
 };
 
 export type PlasmicButton__VariantsArgs = {
@@ -86,6 +87,7 @@ export type PlasmicButton__VariantsArgs = {
     | "clear"
     | "link"
   >;
+  outlined?: SingleBooleanChoiceArg<"outlined">;
 };
 
 type VariantPropType = keyof PlasmicButton__VariantsArgs;
@@ -95,7 +97,8 @@ export const PlasmicButton__VariantProps = new Array<VariantPropType>(
   "isDisabled",
   "shape",
   "size",
-  "color"
+  "color",
+  "outlined"
 );
 
 export type PlasmicButton__ArgsType = {
@@ -138,6 +141,7 @@ export interface DefaultButtonProps extends pp.BaseButtonProps {
     | "clear"
     | "link"
   >;
+  outlined?: SingleBooleanChoiceArg<"outlined">;
 }
 
 function PlasmicButton__RenderFunc(props: {
@@ -199,6 +203,7 @@ function PlasmicButton__RenderFunc(props: {
             "isDisabled",
             "isDisabled"
           ),
+          [sty.rootoutlined]: hasVariant(variants, "outlined", "outlined"),
           [sty.rootshape_round]: hasVariant(variants, "shape", "round"),
           [sty.rootshape_rounded]: hasVariant(variants, "shape", "rounded"),
           [sty.rootshape_sharp]: hasVariant(variants, "shape", "sharp"),
@@ -433,6 +438,11 @@ function PlasmicButton__RenderFunc(props: {
               variants,
               "isDisabled",
               "isDisabled"
+            ),
+            [sty.slotTargetChildrenoutlined]: hasVariant(
+              variants,
+              "outlined",
+              "outlined"
             ),
             [sty.slotTargetChildrenshape_rounded]: hasVariant(
               variants,
