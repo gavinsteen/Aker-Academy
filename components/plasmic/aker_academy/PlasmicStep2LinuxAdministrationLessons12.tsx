@@ -131,7 +131,7 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
               state={
                 hasVariant(variants, "enrolled", "enrolled")
                   ? ("signedIn" as const)
-                  : undefined
+                  : ("signedIn" as const)
               }
             />
 
