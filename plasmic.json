@@ -397,6 +397,46 @@
           "cssFilePath": "plasmic/aker_academy/PlasmicCreate.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "yADmOGOzIX",
+          "name": "NotificationsPanel",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicNotificationsPanel.tsx",
+          "importSpec": {
+            "modulePath": "NotificationsPanel.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicNotificationsPanel.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "e31R0xHdqa",
+          "name": "AccountSettings",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicAccountSettings.tsx",
+          "importSpec": {
+            "modulePath": "../pages/account-settings.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicAccountSettings.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "HboA_9fv9kn",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
         }
       ],
       "icons": [
@@ -479,6 +519,16 @@
           "id": "OlWsaiaXf",
           "name": "Icons8SchoolsvgIcon",
           "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8Schoolsvg.tsx"
+        },
+        {
+          "id": "FI8EfdS2o",
+          "name": "Icons8RightsvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Icons8Rightsvg.tsx"
+        },
+        {
+          "id": "cSV9Bou7mox",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/aker_academy/icons/PlasmicIcon__Searchsvg.tsx"
         }
       ],
       "images": [
@@ -621,6 +671,16 @@
           "id": "SfqjoOmwX",
           "name": "avatar-placeholder.jpg",
           "filePath": "../public/plasmic/aker_academy/images/avatarPlaceholderjpg.jpeg"
+        },
+        {
+          "id": "8zXmY81Fx",
+          "name": "aker-academy-logomark-200x190px.png",
+          "filePath": "../public/plasmic/aker_academy/images/akerAcademyLogomark200X190Pxpng.png"
+        },
+        {
+          "id": "bPHU_9iSz",
+          "name": "avatar-placeholder.jpg 2",
+          "filePath": "../public/plasmic/aker_academy/images/avatarPlaceholderjpg2.jpeg"
         }
       ],
       "indirect": false,

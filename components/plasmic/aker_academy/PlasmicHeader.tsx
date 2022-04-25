@@ -35,6 +35,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
+import { useScreenVariants as useScreenVariantswYcoTSnfjowKk } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WYcoTSnfjowKK/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_aker_academy.module.css"; // plasmic-import: sog8262LcebSfK4tonEqFh/projectcss
@@ -86,6 +88,10 @@ function PlasmicHeader__RenderFunc(props: {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantswYcoTSnfjowKk()
+  });
+
   return (
     true ? (
       <div
@@ -134,38 +140,70 @@ function PlasmicHeader__RenderFunc(props: {
               component={Link}
               platform={"nextjs"}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__qnZY, {
-                  [sty.imgheaderSolid__qnZY3I7V9]: hasVariant(
-                    variants,
-                    "headerSolid",
-                    "headerSolid"
-                  )
-                })}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"220px" as const}
-                loading={"lazy" as const}
-                src={
-                  hasVariant(variants, "headerSolid", "headerSolid")
-                    ? {
-                        src: "/plasmic/aker_academy/images/akerAcademyLogo400X65Pxpng.png",
-                        fullWidth: 400,
-                        fullHeight: 66,
-                        aspectRatio: undefined
-                      }
-                    : {
-                        src: "/plasmic/aker_academy/images/akerAcademyLogoReverse400X66Pxpng.png",
-                        fullWidth: 400,
-                        fullHeight: 66,
-                        aspectRatio: undefined
-                      }
-                }
-              />
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__bgBu)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"64px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/aker_academy/images/akerAcademyLogomark200X190Pxpng.png",
+                    fullWidth: 200,
+                    fullHeight: 191,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__qnZY, {
+                    [sty.imgheaderSolid__qnZY3I7V9]: hasVariant(
+                      variants,
+                      "headerSolid",
+                      "headerSolid"
+                    )
+                  })}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"220px" as const}
+                  loading={"lazy" as const}
+                  src={
+                    hasVariant(variants, "headerSolid", "headerSolid")
+                      ? {
+                          src: "/plasmic/aker_academy/images/akerAcademyLogo400X65Pxpng.png",
+                          fullWidth: 400,
+                          fullHeight: 66,
+                          aspectRatio: undefined
+                        }
+                      : hasVariant(globalVariants, "screen", "mobile")
+                      ? {
+                          src: "/plasmic/aker_academy/images/akerAcademyLogomark200X190Pxpng.png",
+                          fullWidth: 200,
+                          fullHeight: 191,
+                          aspectRatio: undefined
+                        }
+                      : {
+                          src: "/plasmic/aker_academy/images/akerAcademyLogoReverse400X66Pxpng.png",
+                          fullWidth: 400,
+                          fullHeight: 66,
+                          aspectRatio: undefined
+                        }
+                  }
+                />
+              ) : null}
             </p.PlasmicLink>
 
             <div

@@ -1,0 +1,104 @@
+.notificationsPanel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+  height: auto;
+  background: var(--token-kDk2RkWQ2);
+  box-shadow: none;
+  justify-content: center;
+  align-items: flex-start;
+  border-left: 1px solid var(--token-L6thuUXXN);
+}
+.notificationsPanelHeader {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 8px 8px 16px;
+}
+.link {
+  position: relative;
+  display: flex;
+  padding: 8px;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  color: var(--token-W-7uFIfv4);
+  flex-shrink: 0;
+}
+.notificationsPanelBody {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 0px;
+}
+.notificationsPanelSection {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.notificationsPanelSectionHeading {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 0px;
+}
+.notificationsPanelSectionHeadingLeft {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 24px;
+  height: 1px;
+  max-width: 100%;
+  background: var(--token-L6thuUXXN);
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.notificationsPanelSectionHeadingTitle {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.notificationsPanelSectionHeadingRight {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 1px;
+  max-width: 100%;
+  background: var(--token-L6thuUXXN);
+  margin-left: 8px;
+  min-width: 0;
+}
