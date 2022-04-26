@@ -114,7 +114,13 @@ function PlasmicBackLink__RenderFunc(props: {
           ),
 
           value: args.arrowBack,
-          className: classNames(sty.slotTargetArrowBack)
+          className: classNames(sty.slotTargetArrowBack, {
+            [sty.slotTargetArrowBackwhiteColour]: hasVariant(
+              variants,
+              "whiteColour",
+              "whiteColour"
+            )
+          })
         })}
       </div>
     ) : null
