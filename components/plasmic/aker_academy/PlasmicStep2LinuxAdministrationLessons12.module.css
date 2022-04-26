@@ -50,8 +50,23 @@
   width: var(--token-oT5QnAFXU);
   height: auto;
   max-width: 100%;
-  margin-top: 56px;
+  margin-top: 32px;
   padding: var(--token-RGyKlVagZ);
+}
+.link__t3In0 {
+  display: flex;
+}
+.backLink:global(.__wab_instance) {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  color: var(--token-kDk2RkWQ2);
 }
 .pageHeading:global(.__wab_instance) {
   margin-bottom: 32px;
@@ -119,7 +134,7 @@
   position: relative;
   margin-bottom: 24px;
 }
-.link {
+.link___5MmtS {
   position: relative;
   display: flex;
   width: 100%;

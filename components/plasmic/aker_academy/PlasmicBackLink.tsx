@@ -42,11 +42,18 @@ import sty from "./PlasmicBackLink.module.css"; // plasmic-import: 7EPh6ElWir/cs
 
 import BackArrowIcon from "./icons/PlasmicIcon__BackArrow"; // plasmic-import: 3XRP6YsMa/icon
 
-export type PlasmicBackLink__VariantMembers = {};
+export type PlasmicBackLink__VariantMembers = {
+  whiteColour: "whiteColour";
+};
 
-export type PlasmicBackLink__VariantsArgs = {};
+export type PlasmicBackLink__VariantsArgs = {
+  whiteColour?: SingleBooleanChoiceArg<"whiteColour">;
+};
+
 type VariantPropType = keyof PlasmicBackLink__VariantsArgs;
-export const PlasmicBackLink__VariantProps = new Array<VariantPropType>();
+export const PlasmicBackLink__VariantProps = new Array<VariantPropType>(
+  "whiteColour"
+);
 
 export type PlasmicBackLink__ArgsType = {
   arrowBack?: React.ReactNode;
@@ -61,6 +68,7 @@ export type PlasmicBackLink__OverridesType = {
 
 export interface DefaultBackLinkProps {
   arrowBack?: React.ReactNode;
+  whiteColour?: SingleBooleanChoiceArg<"whiteColour">;
   className?: string;
 }
 
@@ -87,13 +95,20 @@ function PlasmicBackLink__RenderFunc(props: {
           projectcss.plasmic_default_styles,
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
-          sty.root
+          sty.root,
+          {
+            [sty.rootwhiteColour]: hasVariant(
+              variants,
+              "whiteColour",
+              "whiteColour"
+            )
+          }
         )}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
             <BackArrowIcon
-              className={classNames(projectcss.all, sty.svg__n0RuK)}
+              className={classNames(projectcss.all, sty.svg__hw5Gm)}
               role={"img"}
             />
           ),

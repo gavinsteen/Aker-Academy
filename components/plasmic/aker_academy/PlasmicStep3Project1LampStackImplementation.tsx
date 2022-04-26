@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: Nxyr3sFmDS/component
+import BackLink from "../../BackLink"; // plasmic-import: 7EPh6ElWir/component
 import PageHeading from "../../PageHeading"; // plasmic-import: XPfe-LECZQ/component
 import ActivitySubNavigation from "../../ActivitySubNavigation"; // plasmic-import: wjbmsNY1FAt/component
 import Button from "../../Button"; // plasmic-import: SpJlpkBmbsK/component
@@ -45,6 +46,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_aker_academy.module.css"; // plasmic-import: sog8262LcebSfK4tonEqFh/projectcss
 import sty from "./PlasmicStep3Project1LampStackImplementation.module.css"; // plasmic-import: 6Y659n9eOk8/css
 
+import BackArrowIcon from "./icons/PlasmicIcon__BackArrow"; // plasmic-import: 3XRP6YsMa/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: g1ioEUoyUBu/icon
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: UiMMPgDsW7t/icon
 
@@ -70,6 +72,8 @@ export type PlasmicStep3Project1LampStackImplementation__OverridesType = {
   root?: p.Flex<"div">;
   sectionHero?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
+  backLink?: p.Flex<typeof BackLink>;
+  svg?: p.Flex<"svg">;
   pageHeading?: p.Flex<typeof PageHeading>;
   h1?: p.Flex<"h1">;
   activitySubNavigation?: p.Flex<typeof ActivitySubNavigation>;
@@ -134,6 +138,32 @@ function PlasmicStep3Project1LampStackImplementation__RenderFunc(props: {
 
             <div className={classNames(projectcss.all, sty.freeBox__uJPv9)}>
               <div className={classNames(projectcss.all, sty.freeBox__mI9RA)}>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__jEeKx
+                  )}
+                  component={Link}
+                  href={"/" as const}
+                  platform={"nextjs"}
+                >
+                  <BackLink
+                    data-plasmic-name={"backLink"}
+                    data-plasmic-override={overrides.backLink}
+                    arrowBack={
+                      <BackArrowIcon
+                        data-plasmic-name={"svg"}
+                        data-plasmic-override={overrides.svg}
+                        className={classNames(projectcss.all, sty.svg)}
+                        role={"img"}
+                      />
+                    }
+                    className={classNames("__wab_instance", sty.backLink)}
+                    whiteColour={true}
+                  />
+                </p.PlasmicLink>
+
                 <PageHeading
                   data-plasmic-name={"pageHeading"}
                   data-plasmic-override={overrides.pageHeading}
@@ -824,6 +854,8 @@ const PlasmicDescendants = {
     "root",
     "sectionHero",
     "header",
+    "backLink",
+    "svg",
     "pageHeading",
     "h1",
     "activitySubNavigation",
@@ -835,8 +867,17 @@ const PlasmicDescendants = {
     "ul",
     "img"
   ],
-  sectionHero: ["sectionHero", "header", "pageHeading", "h1"],
+  sectionHero: [
+    "sectionHero",
+    "header",
+    "backLink",
+    "svg",
+    "pageHeading",
+    "h1"
+  ],
   header: ["header"],
+  backLink: ["backLink", "svg"],
+  svg: ["svg"],
   pageHeading: ["pageHeading", "h1"],
   h1: ["h1"],
   activitySubNavigation: ["activitySubNavigation"],
@@ -870,6 +911,8 @@ type NodeDefaultElementType = {
   root: "div";
   sectionHero: "div";
   header: typeof Header;
+  backLink: typeof BackLink;
+  svg: "svg";
   pageHeading: typeof PageHeading;
   h1: "h1";
   activitySubNavigation: typeof ActivitySubNavigation;
@@ -949,6 +992,8 @@ export const PlasmicStep3Project1LampStackImplementation = Object.assign(
     // Helper components rendering sub-elements
     sectionHero: makeNodeComponent("sectionHero"),
     header: makeNodeComponent("header"),
+    backLink: makeNodeComponent("backLink"),
+    svg: makeNodeComponent("svg"),
     pageHeading: makeNodeComponent("pageHeading"),
     h1: makeNodeComponent("h1"),
     activitySubNavigation: makeNodeComponent("activitySubNavigation"),

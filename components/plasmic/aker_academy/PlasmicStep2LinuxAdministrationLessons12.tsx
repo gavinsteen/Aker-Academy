@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: Nxyr3sFmDS/component
+import BackLink from "../../BackLink"; // plasmic-import: 7EPh6ElWir/component
 import PageHeading from "../../PageHeading"; // plasmic-import: XPfe-LECZQ/component
 import ActivitySubNavigation from "../../ActivitySubNavigation"; // plasmic-import: wjbmsNY1FAt/component
 import EnrolBlock from "../../EnrolBlock"; // plasmic-import: F9ColP2Mm0/component
@@ -45,6 +46,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_aker_academy.module.css"; // plasmic-import: sog8262LcebSfK4tonEqFh/projectcss
 import sty from "./PlasmicStep2LinuxAdministrationLessons12.module.css"; // plasmic-import: 8vP09OMQMX/css
+
+import BackArrowIcon from "./icons/PlasmicIcon__BackArrow"; // plasmic-import: 3XRP6YsMa/icon
 
 export type PlasmicStep2LinuxAdministrationLessons12__VariantMembers = {
   enrolled: "enrolled";
@@ -68,11 +71,12 @@ export type PlasmicStep2LinuxAdministrationLessons12__OverridesType = {
   root?: p.Flex<"div">;
   sectionHero?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
+  backLink?: p.Flex<typeof BackLink>;
+  svg?: p.Flex<"svg">;
   pageHeading?: p.Flex<typeof PageHeading>;
   activitySubNavigation?: p.Flex<typeof ActivitySubNavigation>;
   sectionBody?: p.Flex<"div">;
   enrolBlock?: p.Flex<typeof EnrolBlock>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultStep2LinuxAdministrationLessons12Props {}
@@ -137,6 +141,32 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
 
             <div className={classNames(projectcss.all, sty.freeBox__mFyTr)}>
               <div className={classNames(projectcss.all, sty.freeBox___46ZZx)}>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__t3In0
+                  )}
+                  component={Link}
+                  href={"/" as const}
+                  platform={"nextjs"}
+                >
+                  <BackLink
+                    data-plasmic-name={"backLink"}
+                    data-plasmic-override={overrides.backLink}
+                    arrowBack={
+                      <BackArrowIcon
+                        data-plasmic-name={"svg"}
+                        data-plasmic-override={overrides.svg}
+                        className={classNames(projectcss.all, sty.svg)}
+                        role={"img"}
+                      />
+                    }
+                    className={classNames("__wab_instance", sty.backLink)}
+                    whiteColour={true}
+                  />
+                </p.PlasmicLink>
+
                 <PageHeading
                   data-plasmic-name={"pageHeading"}
                   data-plasmic-override={overrides.pageHeading}
@@ -234,12 +264,10 @@ function PlasmicStep2LinuxAdministrationLessons12__RenderFunc(props: {
                 slot={
                   <React.Fragment>
                     <p.PlasmicLink
-                      data-plasmic-name={"link"}
-                      data-plasmic-override={overrides.link}
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link
+                        sty.link___5MmtS
                       )}
                       component={Link}
                       href={"/step-2-linux-administration-lessons-1-4" as const}
@@ -396,19 +424,21 @@ const PlasmicDescendants = {
     "root",
     "sectionHero",
     "header",
+    "backLink",
+    "svg",
     "pageHeading",
     "activitySubNavigation",
     "sectionBody",
-    "enrolBlock",
-    "link"
+    "enrolBlock"
   ],
-  sectionHero: ["sectionHero", "header", "pageHeading"],
+  sectionHero: ["sectionHero", "header", "backLink", "svg", "pageHeading"],
   header: ["header"],
+  backLink: ["backLink", "svg"],
+  svg: ["svg"],
   pageHeading: ["pageHeading"],
   activitySubNavigation: ["activitySubNavigation"],
-  sectionBody: ["sectionBody", "enrolBlock", "link"],
-  enrolBlock: ["enrolBlock"],
-  link: ["link"]
+  sectionBody: ["sectionBody", "enrolBlock"],
+  enrolBlock: ["enrolBlock"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -417,11 +447,12 @@ type NodeDefaultElementType = {
   root: "div";
   sectionHero: "div";
   header: typeof Header;
+  backLink: typeof BackLink;
+  svg: "svg";
   pageHeading: typeof PageHeading;
   activitySubNavigation: typeof ActivitySubNavigation;
   sectionBody: "div";
   enrolBlock: typeof EnrolBlock;
-  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -490,11 +521,12 @@ export const PlasmicStep2LinuxAdministrationLessons12 = Object.assign(
     // Helper components rendering sub-elements
     sectionHero: makeNodeComponent("sectionHero"),
     header: makeNodeComponent("header"),
+    backLink: makeNodeComponent("backLink"),
+    svg: makeNodeComponent("svg"),
     pageHeading: makeNodeComponent("pageHeading"),
     activitySubNavigation: makeNodeComponent("activitySubNavigation"),
     sectionBody: makeNodeComponent("sectionBody"),
     enrolBlock: makeNodeComponent("enrolBlock"),
-    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicStep2LinuxAdministrationLessons12
     internalVariantProps:

@@ -12,6 +12,9 @@
   border-radius: 50%;
   padding: 8px;
 }
+.rootwhiteColour {
+  background: #ffffff3d;
+}
 .root:hover {
   background: #0f47a152;
   justify-content: center;
@@ -20,11 +23,13 @@
 .slotTargetArrowBack {
   color: var(--token-W-7uFIfv4);
 }
-.svg__n0RuK {
+.svg__hw5Gm {
   position: relative;
   object-fit: cover;
   max-width: 100%;
+  color: var(--token-kDk2RkWQ2);
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+  display: block;
 }

@@ -61,6 +61,7 @@ export type PlasmicWhatIsLinux__OverridesType = {
   header?: p.Flex<typeof Header>;
   link?: p.Flex<"a"> & Partial<LinkProps>;
   backLink?: p.Flex<typeof BackLink>;
+  svg?: p.Flex<"svg">;
   h1?: p.Flex<"h1">;
   sectionBody?: p.Flex<"div">;
   unitVideoPlayer?: p.Flex<"div">;
@@ -131,6 +132,14 @@ function PlasmicWhatIsLinux__RenderFunc(props: {
                   <BackLink
                     data-plasmic-name={"backLink"}
                     data-plasmic-override={overrides.backLink}
+                    arrowBack={
+                      <BackArrowIcon
+                        data-plasmic-name={"svg"}
+                        data-plasmic-override={overrides.svg}
+                        className={classNames(projectcss.all, sty.svg)}
+                        role={"img"}
+                      />
+                    }
                     className={classNames("__wab_instance", sty.backLink)}
                   />
                 </p.PlasmicLink>
@@ -221,6 +230,7 @@ const PlasmicDescendants = {
     "header",
     "link",
     "backLink",
+    "svg",
     "h1",
     "sectionBody",
     "unitVideoPlayer",
@@ -228,10 +238,11 @@ const PlasmicDescendants = {
     "checkbox",
     "text"
   ],
-  sectionHero: ["sectionHero", "header", "link", "backLink", "h1"],
+  sectionHero: ["sectionHero", "header", "link", "backLink", "svg", "h1"],
   header: ["header"],
-  link: ["link", "backLink"],
-  backLink: ["backLink"],
+  link: ["link", "backLink", "svg"],
+  backLink: ["backLink", "svg"],
+  svg: ["svg"],
   h1: ["h1"],
   sectionBody: ["sectionBody", "unitVideoPlayer", "img", "checkbox", "text"],
   unitVideoPlayer: ["unitVideoPlayer", "img"],
@@ -248,6 +259,7 @@ type NodeDefaultElementType = {
   header: typeof Header;
   link: "a";
   backLink: typeof BackLink;
+  svg: "svg";
   h1: "h1";
   sectionBody: "div";
   unitVideoPlayer: "div";
@@ -317,6 +329,7 @@ export const PlasmicWhatIsLinux = Object.assign(
     header: makeNodeComponent("header"),
     link: makeNodeComponent("link"),
     backLink: makeNodeComponent("backLink"),
+    svg: makeNodeComponent("svg"),
     h1: makeNodeComponent("h1"),
     sectionBody: makeNodeComponent("sectionBody"),
     unitVideoPlayer: makeNodeComponent("unitVideoPlayer"),

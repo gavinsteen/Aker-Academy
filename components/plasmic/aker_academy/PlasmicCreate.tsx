@@ -105,6 +105,7 @@ function PlasmicCreate__RenderFunc(props: {
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
             headerSolid={true}
+            state={"signedIn" as const}
           />
 
           <div
@@ -152,32 +153,34 @@ function PlasmicCreate__RenderFunc(props: {
               </div>
             </p.PlasmicLink>
 
-            <p.PlasmicLink
-              data-plasmic-name={"linkCreate2"}
-              data-plasmic-override={overrides.linkCreate2}
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                sty.linkCreate2
-              )}
-              component={Link}
-              platform={"nextjs"}
-            >
-              <Icons8TeachersvgIcon
-                className={classNames(projectcss.all, sty.svg__t2TU)}
-                role={"img"}
-              />
-
-              <div
+            {true ? (
+              <p.PlasmicLink
+                data-plasmic-name={"linkCreate2"}
+                data-plasmic-override={overrides.linkCreate2}
                 className={classNames(
                   projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__cHheY
+                  projectcss.a,
+                  sty.linkCreate2
                 )}
+                component={Link}
+                platform={"nextjs"}
               >
-                {"Instructor"}
-              </div>
-            </p.PlasmicLink>
+                <Icons8TeachersvgIcon
+                  className={classNames(projectcss.all, sty.svg__t2TU)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__cHheY
+                  )}
+                >
+                  {"Instructor"}
+                </div>
+              </p.PlasmicLink>
+            ) : null}
           </div>
         </div>
       </div>
