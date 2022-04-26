@@ -437,6 +437,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "PDOKcMTQ57",
+          "name": "SignInOrRegister",
+          "type": "managed",
+          "projectId": "sog8262LcebSfK4tonEqFh",
+          "renderModuleFilePath": "plasmic/aker_academy/PlasmicSignInOrRegister.tsx",
+          "importSpec": {
+            "modulePath": "../pages/sign-in-or-register.tsx"
+          },
+          "cssFilePath": "plasmic/aker_academy/PlasmicSignInOrRegister.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
