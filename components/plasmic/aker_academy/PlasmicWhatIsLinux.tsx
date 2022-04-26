@@ -145,7 +145,7 @@ function PlasmicWhatIsLinux__RenderFunc(props: {
                     sty.h1
                   )}
                 >
-                  {"What is Linux 2"}
+                  {"What is Linux?"}
                 </h1>
               </div>
             </div>
